@@ -703,6 +703,7 @@ a {
 
 .submit-btn:hover {
     background: var(--secondary);
+    color: black;
 
     gap: 14px;
 
