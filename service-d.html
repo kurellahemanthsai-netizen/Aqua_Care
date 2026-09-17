@@ -1,0 +1,1017 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/logo.png" />
+
+    <title>Services</title>
+    <!-- Main CSS -->
+     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="service-d.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- =========================================================
+     HEADER
+========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+             LOGO
+        ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="AquaCare Home">
+            <img src="images/logo.png" alt="AquaCare Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="aqua">Aqua</span><span class="care">Care</span>
+            </h1>
+
+            <p>Aquarium Setup & Maintenance</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+             NAVIGATION
+        ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 – Classic Modern</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 – Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html"> About </a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="service.html" class="active"> Services </a>
+            </li>
+
+            <!-- GALLERY -->
+
+            <li>
+              <a href="gallery.html"> Gallery </a>
+            </li>
+
+            <!-- PRICING -->
+
+            <li>
+              <a href="pricing.html"> Pricing </a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html"> Contact </a>
+            </li>
+          </ul>
+
+          <div class="mobile-book">
+            <a href="book.html" class="book-btn">
+              <span>Book a Visit</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+             HEADER ACTIONS
+        ================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL TOGGLE -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+                 SINGLE BOOK A VISIT BUTTON
+            ================================================== -->
+
+          <a href="book.html" class="book-btn desktop-book">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="setup-hero-section" id="setup-hero">
+      <div class="setup-hero-background">
+        <img
+          src="images/hero-5.png"
+          alt="Professional aquarium setup"
+          class="setup-hero-image"
+        />
+        <div class="setup-hero-overlay"></div>
+      </div>
+
+      <div class="setup-hero-container">
+        <div class="setup-hero-content">
+          <div class="setup-hero-label">
+            <span></span>
+            AQUARIUM SETUP SERVICE
+          </div>
+
+          <h1>
+            From an Empty Tank
+            <span>to a Living Environment.</span>
+          </h1>
+
+          <p>
+            We plan, install, aquascape, and prepare your aquarium with careful
+            attention to your space, equipment, aquatic life, and long-term
+            care.
+          </p>
+
+          <div class="setup-hero-actions">
+            <a
+              href="contact.html#booking"
+              class="setup-hero-button setup-hero-button-primary"
+            >
+              <span>Book a Setup Visit</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="#setup-process"
+              class="setup-hero-button setup-hero-button-secondary"
+            >
+              <span>Explore the Process</span>
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="setup-foundation-section" id="setup-process">
+      <div class="setup-foundation-container">
+        <!-- SECTION HEADING -->
+        <div class="setup-foundation-heading">
+          <div class="setup-foundation-label">
+            <span></span>
+            WHAT GOES INTO A PROPER SETUP
+            <span></span>
+          </div>
+
+          <h2>
+            A Strong Foundation for a
+            <span>Healthy Aquarium.</span>
+          </h2>
+
+          <p>
+            Every successful aquarium starts with the right foundation. We
+            carefully plan each stage to create an environment that looks
+            beautiful and supports healthy aquatic life.
+          </p>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="setup-foundation-main">
+          <!-- SETUP STEPS -->
+          <div class="setup-foundation-steps">
+            <!-- 01 -->
+            <article class="setup-foundation-step">
+              <div class="setup-foundation-step-number">01</div>
+
+              <div class="setup-foundation-step-icon">
+                <i data-lucide="ruler" aria-hidden="true"></i>
+              </div>
+
+              <div class="setup-foundation-step-content">
+                <span>STEP ONE</span>
+
+                <h3>Planning</h3>
+
+                <p>
+                  We understand your space, aquarium size, placement, style, and
+                  overall vision before the setup begins.
+                </p>
+              </div>
+            </article>
+
+            <!-- 02 -->
+            <article class="setup-foundation-step">
+              <div class="setup-foundation-step-number">02</div>
+
+              <div class="setup-foundation-step-icon">
+                <i data-lucide="settings-2" aria-hidden="true"></i>
+              </div>
+
+              <div class="setup-foundation-step-content">
+                <span>STEP TWO</span>
+
+                <h3>Equipment</h3>
+
+                <p>
+                  We select and install essential equipment such as filtration,
+                  lighting, heating, and water circulation.
+                </p>
+              </div>
+            </article>
+
+            <!-- 03 -->
+            <article class="setup-foundation-step">
+              <div class="setup-foundation-step-number">03</div>
+
+              <div class="setup-foundation-step-icon">
+                <i data-lucide="sprout" aria-hidden="true"></i>
+              </div>
+
+              <div class="setup-foundation-step-content">
+                <span>STEP THREE</span>
+
+                <h3>Aquascaping</h3>
+
+                <p>
+                  Plants, rocks, substrate, and décor are arranged to create a
+                  balanced and natural-looking aquatic environment.
+                </p>
+              </div>
+            </article>
+
+            <!-- 04 -->
+            <article class="setup-foundation-step">
+              <div class="setup-foundation-step-number">04</div>
+
+              <div class="setup-foundation-step-icon">
+                <i data-lucide="fish" aria-hidden="true"></i>
+              </div>
+
+              <div class="setup-foundation-step-content">
+                <span>STEP FOUR</span>
+
+                <h3>Stocking</h3>
+
+                <p>
+                  Once the environment is ready, we help prepare the aquarium
+                  for suitable aquatic life and a healthy start.
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- IMAGE -->
+          <div class="setup-foundation-visual">
+            <img
+              src="images/sd-1.png"
+              alt="Aquarium setup and aquascaping"
+            />
+
+            <div class="setup-foundation-image-overlay"></div>
+
+            <div class="setup-foundation-image-caption">
+              <span>AQUACARE</span>
+              <strong>BUILT WITH PURPOSE</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="setup-space-section" id="designed-space">
+      <div class="setup-space-container">
+        <!-- SECTION HEADING -->
+        <div class="setup-space-heading">
+          <div class="setup-space-label">
+            <span></span>
+            DESIGNED AROUND YOUR SPACE
+            <span></span>
+          </div>
+
+          <h2>
+            Your Aquarium Should Feel
+            <span>Like It Belongs.</span>
+          </h2>
+
+          <p>
+            Every aquarium we create is planned around your room, your style,
+            and the way you want to experience your space.
+          </p>
+        </div>
+
+        <!-- ZIGZAG ITEM 01 -->
+        <article class="setup-space-row">
+          <div class="setup-space-image">
+            <img
+              src="images/sd-2.png"
+              alt="Aquarium designed for a living space"
+            />
+
+            <div class="setup-space-image-overlay"></div>
+
+            <div class="setup-space-image-number">01</div>
+          </div>
+
+          <div class="setup-space-content">
+            <div class="setup-space-icon">
+              <i data-lucide="maximize-2" aria-hidden="true"></i>
+            </div>
+
+            <span class="setup-space-step"> SPACE & PROPORTION </span>
+
+            <h3>
+              Designed to Fit
+              <span>Your Space.</span>
+            </h3>
+
+            <p>
+              We consider the size, shape, placement, and natural flow of your
+              room so the aquarium feels like a natural part of the environment
+              rather than an addition.
+            </p>
+
+            <div class="setup-space-line"></div>
+          </div>
+        </article>
+
+        <!-- ZIGZAG ITEM 02 -->
+        <article class="setup-space-row setup-space-row-reverse">
+          <div class="setup-space-image">
+            <img
+              src="images/sd-3.png"
+              alt="Planted aquarium interior design"
+            />
+
+            <div class="setup-space-image-overlay"></div>
+
+            <div class="setup-space-image-number">02</div>
+          </div>
+
+          <div class="setup-space-content">
+            <div class="setup-space-icon">
+              <i data-lucide="palette" aria-hidden="true"></i>
+            </div>
+
+            <span class="setup-space-step"> INTERIOR STYLE </span>
+
+            <h3>
+              Made to Complement
+              <span>Your Interior.</span>
+            </h3>
+
+            <p>
+              From modern and minimal spaces to warm and natural interiors, we
+              select shapes, materials, plants, and aquascaping elements that
+              complement your surroundings.
+            </p>
+
+            <div class="setup-space-line"></div>
+          </div>
+        </article>
+
+        <!-- ZIGZAG ITEM 03 -->
+        <article class="setup-space-row">
+          <div class="setup-space-image">
+            <img
+              src="images/sd-4.png"
+              alt="Aquarium lighting and environment"
+            />
+
+            <div class="setup-space-image-overlay"></div>
+
+            <div class="setup-space-image-number">03</div>
+          </div>
+
+          <div class="setup-space-content">
+            <div class="setup-space-icon">
+              <i data-lucide="sun-medium" aria-hidden="true"></i>
+            </div>
+
+            <span class="setup-space-step"> LIGHT & ENVIRONMENT </span>
+
+            <h3>
+              Balanced for
+              <span>Light & Life.</span>
+            </h3>
+
+            <p>
+              We consider natural and artificial lighting, surrounding
+              conditions, and equipment placement to help create a comfortable
+              environment for both your aquarium and your space.
+            </p>
+
+            <div class="setup-space-line"></div>
+          </div>
+        </article>
+
+        <!-- ZIGZAG ITEM 04 -->
+        <article class="setup-space-row setup-space-row-reverse">
+          <div class="setup-space-image">
+            <img
+              src="images/sd-5.png"
+              alt="Healthy aquatic life environment"
+            />
+
+            <div class="setup-space-image-overlay"></div>
+
+            <div class="setup-space-image-number">04</div>
+          </div>
+
+          <div class="setup-space-content">
+            <div class="setup-space-icon">
+              <i data-lucide="fish" aria-hidden="true"></i>
+            </div>
+
+            <span class="setup-space-step"> AQUATIC LIFE </span>
+
+            <h3>
+              Built Around
+              <span>Healthy Life.</span>
+            </h3>
+
+            <p>
+              Fish, plants, and other aquatic elements are considered together
+              to create a balanced environment that supports healthy aquatic
+              life and long-term care.
+            </p>
+
+            <div class="setup-space-line"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="setup-includes-section" id="setup-includes">
+      <div class="setup-includes-container">
+        <!-- SECTION HEADING -->
+        <div class="setup-includes-heading">
+          <div class="setup-includes-label">
+            <span></span>
+            OUR SETUP INCLUDES
+            <span></span>
+          </div>
+
+          <h2>
+            Everything Your Aquarium
+            <span>Needs to Get Started.</span>
+          </h2>
+
+          <p>
+            From the tank and equipment to aquascaping and water preparation, we
+            take care of the essential details needed for a successful setup.
+          </p>
+        </div>
+
+        <!-- FEATURE LIST -->
+        <div class="setup-includes-list">
+          <!-- ITEM 01 -->
+          <article class="setup-includes-item">
+            <div class="setup-includes-number">01</div>
+
+            <div class="setup-includes-icon">
+              <i data-lucide="box" aria-hidden="true"></i>
+            </div>
+
+            <div class="setup-includes-content">
+              <span class="setup-includes-label-small"> FOUNDATION </span>
+
+              <h3>Tank & Placement</h3>
+
+              <p>
+                Aquarium positioning, sizing, and placement preparation to make
+                sure the tank fits naturally within your space.
+              </p>
+            </div>
+
+            <div class="setup-includes-arrow">
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <!-- ITEM 02 -->
+          <article class="setup-includes-item">
+            <div class="setup-includes-number">02</div>
+
+            <div class="setup-includes-icon">
+              <i data-lucide="settings-2" aria-hidden="true"></i>
+            </div>
+
+            <div class="setup-includes-content">
+              <span class="setup-includes-label-small"> EQUIPMENT </span>
+
+              <h3>Filtration & Equipment</h3>
+
+              <p>
+                Essential filtration, lighting, heating, pumps, and other
+                equipment required for a stable aquarium environment.
+              </p>
+            </div>
+
+            <div class="setup-includes-arrow">
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <!-- ITEM 03 -->
+          <article class="setup-includes-item">
+            <div class="setup-includes-number">03</div>
+
+            <div class="setup-includes-icon">
+              <i data-lucide="sprout" aria-hidden="true"></i>
+            </div>
+
+            <div class="setup-includes-content">
+              <span class="setup-includes-label-small"> AQUASCAPING </span>
+
+              <h3>Substrate & Aquascaping</h3>
+
+              <p>
+                Plants, rocks, substrate, and decorative elements arranged to
+                create a balanced and natural aquatic composition.
+              </p>
+            </div>
+
+            <div class="setup-includes-arrow">
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </div>
+          </article>
+
+          <!-- ITEM 04 -->
+          <article class="setup-includes-item">
+            <div class="setup-includes-number">04</div>
+
+            <div class="setup-includes-icon">
+              <i data-lucide="droplets" aria-hidden="true"></i>
+            </div>
+
+            <div class="setup-includes-content">
+              <span class="setup-includes-label-small"> PREPARATION </span>
+
+              <h3>Water Preparation</h3>
+
+              <p>
+                Preparing the aquarium environment with the right water
+                conditions before introducing aquatic life.
+              </p>
+            </div>
+
+            <div class="setup-includes-arrow">
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SECTION 5 — FROM EMPTY TANK TO LIVING ENVIRONMENT
+     ========================================================= -->
+
+    <section class="setup-journey-section" id="setup-journey">
+      <div class="setup-journey-container">
+        <div class="setup-journey-heading">
+          <div class="setup-journey-label">
+            <span></span>
+            FROM EMPTY TANK TO LIVING ENVIRONMENT
+            <span></span>
+          </div>
+
+          <h2>
+            Built Step by Step.
+            <span>Ready to Thrive.</span>
+          </h2>
+
+          <p>
+            Every successful aquarium starts with the right foundation. We
+            carefully bring together each element to create a balanced and
+            beautiful aquatic environment.
+          </p>
+        </div>
+
+        <div class="setup-journey-timeline">
+          <!-- 01 -->
+          <article class="setup-journey-step">
+            <div class="setup-journey-number">01</div>
+
+            <div class="setup-journey-dot">
+              <i data-lucide="ruler" aria-hidden="true"></i>
+            </div>
+
+            <div class="setup-journey-content">
+              <h3>Foundation</h3>
+              <p>Tank & Placement</p>
+              <span>Prepare</span>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article class="setup-journey-step">
+            <div class="setup-journey-number">02</div>
+
+            <div class="setup-journey-dot">
+              <i data-lucide="settings-2" aria-hidden="true"></i>
+            </div>
+
+            <div class="setup-journey-content">
+              <h3>Equipment</h3>
+              <p>Filtration & Lighting</p>
+              <span>Install</span>
+            </div>
+          </article>
+
+          <!-- 03 -->
+          <article class="setup-journey-step">
+            <div class="setup-journey-number">03</div>
+
+            <div class="setup-journey-dot">
+              <i data-lucide="sprout" aria-hidden="true"></i>
+            </div>
+
+            <div class="setup-journey-content">
+              <h3>Aquascaping</h3>
+              <p>Plants & Substrate</p>
+              <span>Create</span>
+            </div>
+          </article>
+
+          <!-- 04 -->
+          <article class="setup-journey-step">
+            <div class="setup-journey-number">04</div>
+
+            <div class="setup-journey-dot">
+              <i data-lucide="fish" aria-hidden="true"></i>
+            </div>
+
+            <div class="setup-journey-content">
+              <h3>Aquatic Life</h3>
+              <p>Healthy Environment</p>
+              <span>Thrive</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="setup-journey-endpoints">
+          <span>EMPTY TANK</span>
+          <span class="setup-journey-end-line"></span>
+          <span>LIVING ENVIRONMENT</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SECTION 6 — FINAL CTA
+     ========================================================= -->
+
+<section class="setup-final-cta" id="setup-final-cta">
+  <div class="setup-final-cta-container">
+
+    <div class="setup-final-cta-decoration setup-cta-circle-one"></div>
+    <div class="setup-final-cta-decoration setup-cta-circle-two"></div>
+
+    <div class="setup-final-cta-content">
+
+      <div class="setup-final-cta-label">
+        <span></span>
+        READY TO GET STARTED?
+        <span></span>
+      </div>
+
+      <h2>
+        Let's Build Your
+        <span>Living Aquarium.</span>
+      </h2>
+
+      <p>
+        Tell us about your space, your aquarium, and your vision.
+        We'll help you create a beautiful aquatic environment designed
+        to thrive from day one.
+      </p>
+
+      <a href="contact.html#booking" class="setup-final-cta-button">
+        <span>Book a Setup Visit</span>
+        <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+             BRAND
+        ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="AquaCare Home">
+              <img src="images/logo.png" alt="AquaCare Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>
+                <span class="aqua">Aqua</span><span class="care">Care</span>
+              </h1>
+
+              <p>Aquarium Setup & Maintenance</p>
+            </div>
+          </div>
+
+          <p class="footer-about">
+            AquaCare provides professional aquarium setup, maintenance,
+            aquascaping, and fish health services to create beautiful, clean,
+            and healthy aquatic environments.
+          </p>
+
+          <!-- =================================================
+                 SOCIAL MEDIA
+            ================================================== -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+             QUICK LINKS
+        ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+
+            <!-- <li>
+              <a href="home2.html"> Premium Home </a>
+            </li> -->
+
+            <li>
+              <a href="about.html"> About Us </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Services </a>
+            </li>
+
+            <li>
+              <a href="gallery.html"> Gallery </a>
+            </li>
+
+            <li>
+              <a href="pricing.html"> Pricing </a>
+            </li>
+
+            <li>
+              <a href="contact.html"> Contact </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+             OUR SERVICES
+        ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+
+          <ul>
+            <li>
+              <a href="service.html"> Aquarium Setup </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Aquarium Maintenance </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Aquascaping </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Fish Health Checkups </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Equipment Setup </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Custom Aquarium Design </a>
+            </li>
+          </ul>
+        </div>
+        <!-- =================================================
+             AQUARIUM CARE
+        ================================================== -->
+
+        <div class="footer-col">
+          <h3>Information</h3>
+
+          <ul>
+            <li>
+              <a href="404.html"> 404 </a>
+            </li>
+
+            <li>
+              <a href="comming.html"> Comming Soon... </a>
+            </li>
+            <li>
+              <a href="index.html#lifecycle">Aquarium Lifecycle</a>
+            </li>
+            <li>
+              <a href="service-d.html"> Aquarium Setup </a>
+            </li>
+            <li>
+              <a href="pricing.html"> Care Palns </a>
+            </li>
+            <li>
+              <a href="service.html"> Fish Care Tips</a>
+            </li>
+          </ul>
+        </div>
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Hyderabad, India </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+919876543210"> +91 98765 43210 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@aquacare.com"> info@aquacare.com </a>
+            </li>
+
+            <!-- BUSINESS HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 9 AM – 7 PM </span>
+            </li>
+          </ul>
+
+          <!-- FOOTER CTA -->
+
+          <a href="book.html" class="footer-book-btn">
+            <span> Book a Site Visit </span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+         FOOTER BOTTOM
+    ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+          <span class="aqua">Aqua</span><span class="care">Care</span>. All
+          Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Main JavaScript -->
+
+    <script src="global.js"></script>
+  </body>
+</html>

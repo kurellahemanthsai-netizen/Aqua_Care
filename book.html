@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Book a Visit | AquaCare</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="book.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+         TOP CONTROLS
+         ===================================================== -->
+
+    <div class="page-controls">
+      <button
+        type="button"
+        id="rtlToggle"
+        class="control-btn"
+        aria-label="Toggle RTL"
+        title="Toggle RTL"
+      >
+        <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+        <span>RTL</span>
+      </button>
+
+      <button
+        type="button"
+        id="darkToggle"
+        class="control-btn"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+      >
+        <i data-lucide="moon" aria-hidden="true"></i>
+        <span>Dark Mode</span>
+      </button>
+    </div>
+
+    <!-- =====================================================
+         BOOKING PAGE
+         ===================================================== -->
+
+    <main class="booking-page">
+      <!-- =================================================
+             INTRO
+             ================================================= -->
+
+      <section class="booking-intro">
+        <div class="intro-inner">
+          <!-- LOGO + TITLE -->
+
+          <div class="booking-logo">
+            <a href="index.html">
+              <img
+                src="images/logo.png"
+                alt="AquaCare Aquarium Setup & Maintenance"
+              />
+            </a>
+
+            <div
+              class="logo-text"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>
+                <span class="aqua">Aqua</span><span class="care">Care</span>
+              </h1>
+
+              <p>Aquarium Setup &amp; Maintenance</p>
+            </div>
+          </div>
+
+          <!-- BOOK A VISIT LABEL -->
+
+          <div class="booking-label">
+            <span></span>
+            <strong>BOOK A VISIT</strong>
+            <span></span>
+          </div>
+
+          <!-- MAIN HEADING -->
+
+          <h1>
+            Let's Plan Your
+            <span>Aquarium.</span>
+          </h1>
+
+          <!-- INTRO DESCRIPTION -->
+
+          <p>
+            Share a few details about your aquarium and what you need.
+            <br />
+            We'll get in touch to plan the right visit for your space.
+          </p>
+        </div>
+      </section>
+
+      <!-- =================================================
+             FORM
+             ================================================= -->
+
+      <section class="booking-form-section">
+        <div class="form-container">
+          <div class="form-card">
+            <form id="bookingForm">
+              <!-- FORM HEADING -->
+
+              <div class="form-title">
+                <span>YOUR DETAILS</span>
+
+                <h2>Visit Request</h2>
+
+                <p>Tell us a little about yourself and your aquarium.</p>
+              </div>
+
+              <!-- =====================================
+                             ROW 1
+                             ===================================== -->
+
+              <div class="field-row">
+                <!-- FULL NAME -->
+
+                <div class="field">
+                  <label for="name"> Full Name </label>
+
+                  <div class="input-wrapper">
+                    <i data-lucide="user-round" aria-hidden="true"></i>
+
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your full name"
+                      autocomplete="name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <!-- PHONE -->
+
+                <div class="field">
+                  <label for="phone"> Phone Number </label>
+
+                  <div class="input-wrapper">
+                    <i data-lucide="phone" aria-hidden="true"></i>
+
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="+91 XXXXX XXXXX"
+                      autocomplete="tel"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- =====================================
+                             ROW 2
+                             ===================================== -->
+
+              <div class="field-row">
+                <!-- EMAIL -->
+
+                <div class="field">
+                  <label for="email"> Email Address </label>
+
+                  <div class="input-wrapper">
+                    <i data-lucide="mail" aria-hidden="true"></i>
+
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="you@example.com"
+                      autocomplete="email"
+                    />
+                  </div>
+                </div>
+
+                <!-- SERVICE -->
+
+                <div class="field">
+                  <label for="service"> Service Required </label>
+
+                  <div class="input-wrapper select-wrapper">
+                    <i data-lucide="settings-2" aria-hidden="true"></i>
+
+                    <select id="service" name="service" required>
+                      <option value="" disabled selected>
+                        Select a service
+                      </option>
+
+                      <option value="setup">Aquarium Setup</option>
+
+                      <option value="maintenance">Aquarium Maintenance</option>
+
+                      <option value="health">Fish Health Checkup</option>
+
+                      <option value="consultation">
+                        Aquarium Consultation
+                      </option>
+                    </select>
+
+                    <span class="select-arrow"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- =====================================
+                             ROW 3
+                             ===================================== -->
+
+              <div class="field-row">
+                <!-- DATE -->
+
+                <div class="field">
+                  <label for="date"> Preferred Date </label>
+
+                  <div class="input-wrapper">
+                    <i data-lucide="calendar-days" aria-hidden="true"></i>
+
+                    <input type="date" id="date" name="date" required />
+                  </div>
+                </div>
+
+                <!-- TIME -->
+
+                <div class="field">
+                  <label for="time"> Preferred Time </label>
+
+                  <div class="input-wrapper select-wrapper">
+                    <i data-lucide="clock-3" aria-hidden="true"></i>
+
+                    <select id="time" name="time" required>
+                      <option value="" disabled selected>Select a time</option>
+
+                      <option value="morning">Morning — 9 AM to 12 PM</option>
+
+                      <option value="afternoon">
+                        Afternoon — 12 PM to 3 PM
+                      </option>
+
+                      <option value="evening">Evening — 3 PM to 6 PM</option>
+                    </select>
+
+                    <span class="select-arrow"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- =====================================
+                             LOCATION
+                             ===================================== -->
+
+              <div class="field full-field">
+                <label for="location"> Aquarium Location </label>
+
+                <div class="input-wrapper">
+                  <i data-lucide="map-pin" aria-hidden="true"></i>
+
+                  <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    placeholder="Enter your area / locality"
+                    autocomplete="street-address"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- =====================================
+                             MESSAGE
+                             ===================================== -->
+
+              <div class="field full-field">
+                <label for="message"> Tell Us About Your Aquarium </label>
+
+                <div class="textarea-wrapper">
+                  <i data-lucide="file-text" aria-hidden="true"></i>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell us about your aquarium, tank size, current condition, fish, or anything else you'd like us to know..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- =====================================
+                             SUBMIT
+                             ===================================== -->
+
+              <button type="submit" class="submit-btn">
+                <span>Request a Visit</span>
+
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </button>
+
+              <!-- SECURITY -->
+
+              <div class="security-note">
+                <i data-lucide="shield-check" aria-hidden="true"></i>
+
+                <span>
+                  Your information will only be used to contact you about your
+                  aquarium visit.
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="global.js"></script>
+    <script src="book.js"></script>
+  </body>
+</html>

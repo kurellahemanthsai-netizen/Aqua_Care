@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="demo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+     <!-- =========================================================
+     HEADER
+========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+             LOGO
+        ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="AquaCare Home">
+            <img src="images/logo.png" alt="AquaCare Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="aqua">Aqua</span><span class="care">Care</span>
+            </h1>
+
+            <p>Aquarium Setup & Maintenance</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+             NAVIGATION
+        ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 – Classic Modern</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 – Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html"> About </a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="service.html"> Services </a>
+            </li>
+
+            <!-- GALLERY -->
+
+            <li>
+              <a href="gallery.html"> Gallery </a>
+            </li>
+
+            <!-- PRICING -->
+
+            <li>
+              <a href="pricing.html"> Pricing </a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html"> Contact </a>
+            </li>
+          </ul>
+
+          <div class="mobile-book">
+            <a href="contact.html#booking" class="book-btn">
+              <span>Book a Visit</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+             HEADER ACTIONS
+        ================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL TOGGLE -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+                 SINGLE BOOK A VISIT BUTTON
+            ================================================== -->
+
+          <a href="contact.html#booking" class="book-btn desktop-book">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+     <!-- =========================================================
+     FOOTER
+========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+             BRAND
+        ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="AquaCare Home">
+              <img src="images/logo.png" alt="AquaCare Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>
+                <span class="aqua">Aqua</span><span class="care">Care</span>
+              </h1>
+
+              <p>Aquarium Setup & Maintenance</p>
+            </div>
+          </div>
+
+          <p class="footer-about">
+            AquaCare provides professional aquarium setup, maintenance,
+            aquascaping, and fish health services to create beautiful, clean,
+            and healthy aquatic environments.
+          </p>
+
+          <!-- =================================================
+                 SOCIAL MEDIA
+            ================================================== -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+             QUICK LINKS
+        ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+
+            <!-- <li>
+              <a href="home2.html"> Premium Home </a>
+            </li> -->
+
+            <li>
+              <a href="about.html"> About Us </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Services </a>
+            </li>
+
+            <li>
+              <a href="gallery.html"> Gallery </a>
+            </li>
+
+            <li>
+              <a href="pricing.html"> Pricing </a>
+            </li>
+
+            <li>
+              <a href="contact.html"> Contact </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+             OUR SERVICES
+        ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+
+          <ul>
+            <li>
+              <a href="service.html#setup"> Aquarium Setup </a>
+            </li>
+
+            <li>
+              <a href="service.html#maintenance"> Aquarium Maintenance </a>
+            </li>
+
+            <li>
+              <a href="service.html#aquascaping"> Aquascaping </a>
+            </li>
+
+            <li>
+              <a href="service.html#health"> Fish Health Checkups </a>
+            </li>
+
+            <li>
+              <a href="service.html#equipment"> Equipment Setup </a>
+            </li>
+
+            <li>
+              <a href="service.html#custom"> Custom Aquarium Design </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+             AQUARIUM CARE
+        ================================================== -->
+
+        <div class="footer-col">
+          <h3>Aquarium Care</h3>
+
+          <ul>
+            <li>
+              <a href="gallery.html"> Custom Aquariums </a>
+            </li>
+
+            <li>
+              <a href="gallery.html"> Planted Aquariums </a>
+            </li>
+
+            <li>
+              <a href="gallery.html"> Aquascaping Projects </a>
+            </li>
+
+            <li>
+              <a href="pricing.html"> Maintenance Plans </a>
+            </li>
+
+            <li>
+              <a href="pricing.html"> Setup Packages </a>
+            </li>
+
+            <li>
+              <a href="contact.html"> Request a Quote </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Hyderabad, India </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+919876543210"> +91 98765 43210 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@aquacare.com"> info@aquacare.com </a>
+            </li>
+
+            <!-- BUSINESS HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 9 AM – 7 PM </span>
+            </li>
+          </ul>
+
+          <!-- FOOTER CTA -->
+
+          <a href="contact.html#booking" class="footer-book-btn">
+            <span> Book a Site Visit </span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+         FOOTER BOTTOM
+    ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+          <span class="aqua">Aqua</span><span class="care">Care</span>. All
+          Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Main JavaScript -->
+    <script src="demo.js"></script>
+</body>
+</html>

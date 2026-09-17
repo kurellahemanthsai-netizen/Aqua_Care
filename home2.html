@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/logo.png" />
+
+    <title>Home</title>
+    <!-- Main CSS -->
+     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="home2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- =========================================================
+     HEADER
+========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+             LOGO
+        ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="AquaCare Home">
+            <img src="images/logo.png" alt="AquaCare Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="aqua">Aqua</span><span class="care">Care</span>
+            </h1>
+
+            <p>Aquarium Setup & Maintenance</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+             NAVIGATION
+        ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html" class="active">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 – Classic Modern</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html" class="active">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 – Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html"> About </a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="service.html"> Services </a>
+            </li>
+
+            <!-- GALLERY -->
+
+            <li>
+              <a href="gallery.html"> Gallery </a>
+            </li>
+
+            <!-- PRICING -->
+
+            <li>
+              <a href="pricing.html"> Pricing </a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html"> Contact </a>
+            </li>
+          </ul>
+
+          <div class="mobile-book">
+            <a href="book.html" class="book-btn">
+              <span>Book a Visit</span>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+             HEADER ACTIONS
+        ================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL TOGGLE -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+          >
+            <i data-lucide="arrow-left-right"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- =================================================
+                 SINGLE BOOK A VISIT BUTTON
+            ================================================== -->
+
+          <a href="book.html" class="book-btn desktop-book">
+            <span>Book a Visit</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="h2-centered-hero" id="home2-hero">
+      <div class="h2-hero-bg">
+        <img
+          src="images/hero-2.avif"
+          alt="Premium AquaCare aquarium"
+          class="h2-hero-image"
+        />
+        <div class="h2-hero-overlay"></div>
+      </div>
+
+      <!-- Animated bubbles -->
+      <div class="h2-bubbles" aria-hidden="true">
+        <span class="bubble bubble-1"></span>
+        <span class="bubble bubble-2"></span>
+        <span class="bubble bubble-3"></span>
+        <span class="bubble bubble-4"></span>
+        <span class="bubble bubble-5"></span>
+        <span class="bubble bubble-6"></span>
+        <span class="bubble bubble-7"></span>
+        <span class="bubble bubble-8"></span>
+      </div>
+
+      <!-- Animated fish -->
+      <div class="h2-fish h2-fish-1" aria-hidden="true">
+        <i data-lucide="fish"></i>
+      </div>
+
+      <div class="h2-fish h2-fish-2" aria-hidden="true">
+        <i data-lucide="fish"></i>
+      </div>
+
+      <div class="h2-fish h2-fish-3" aria-hidden="true">
+        <i data-lucide="fish"></i>
+      </div>
+
+      <!-- Decorative glow -->
+      <div class="h2-hero-glow h2-glow-one"></div>
+      <div class="h2-hero-glow h2-glow-two"></div>
+
+      <!-- Main content -->
+      <div class="h2-hero-content">
+        <div class="h2-hero-eyebrow">
+          <span></span>
+          PREMIUM AQUARIUM DESIGN & CARE
+          <span></span>
+        </div>
+
+        <h1>
+          A Healthier Space.
+          <span>A Calmer You.</span>
+        </h1>
+
+        <p>
+          Bespoke aquariums designed with intention, professionally installed,
+          and carefully maintained to bring beauty, balance, and aquatic life
+          into your space.
+        </p>
+
+        <div class="h2-hero-actions">
+          <a href="gallery.html" class="h2-hero-btn h2-hero-btn-primary">
+            <span>Explore Our Aquariums</span>
+            <i data-lucide="arrow-right" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="contact.html#booking"
+            class="h2-hero-btn h2-hero-btn-secondary"
+          >
+            <span>Book a Consultation</span>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom highlights -->
+      <div class="h2-hero-highlights">
+        <div class="h2-highlight">
+          <i data-lucide="sparkles" aria-hidden="true"></i>
+          <div>
+            <strong>Beautiful Designs</strong>
+            <span>Made for your space</span>
+          </div>
+        </div>
+
+        <div class="h2-highlight">
+          <i data-lucide="waves" aria-hidden="true"></i>
+          <div>
+            <strong>Healthy Environments</strong>
+            <span>Balanced aquatic life</span>
+          </div>
+        </div>
+
+        <div class="h2-highlight">
+          <i data-lucide="heart-pulse" aria-hidden="true"></i>
+          <div>
+            <strong>Dedicated Care</strong>
+            <span>Long-term maintenance</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="h2-hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+        <i data-lucide="arrow-down" aria-hidden="true"></i>
+      </div>
+    </section>
+    <!-- 
+   HOME 2 — SECTION 2
+   SIGNATURE AQUACARE EXPERIENCE -->
+
+    <section class="h2-signature-section" id="signature-experience">
+      <div class="h2-signature-container">
+        <div class="h2-signature-main">
+          <div class="h2-signature-content">
+            <div class="h2-signature-label">
+              <span></span>
+              THE AQUACARE EXPERIENCE
+            </div>
+
+            <h2>
+              More Than an Aquarium.
+              <span>A Living Piece of Your Space.</span>
+            </h2>
+
+            <p>
+              We bring together thoughtful aquarium design, professional
+              installation, and ongoing care to create aquatic environments that
+              feel natural, refined, and effortless to enjoy.
+            </p>
+
+            <a href="about.html" class="h2-signature-link">
+              <span>Discover AquaCare</span>
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="h2-signature-visual">
+            <div class="h2-signature-image-wrap">
+              <img
+                src="images/natural.jpeg"
+                alt="AquaCare custom aquarium design"
+                class="h2-signature-image"
+              />
+
+            </div>
+          </div>
+        </div>
+
+        <div class="h2-signature-points">
+          <div class="h2-signature-point">
+            <span class="h2-signature-point-number">01</span>
+
+            <div class="h2-signature-point-icon">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+            </div>
+
+            <div class="h2-signature-point-content">
+              <h3>Thoughtful Design</h3>
+              <p>
+                Every aquarium is planned around your space, style, and aquatic
+                life.
+              </p>
+            </div>
+          </div>
+
+          <div class="h2-signature-point">
+            <span class="h2-signature-point-number">02</span>
+
+            <div class="h2-signature-point-icon">
+              <i data-lucide="wrench" aria-hidden="true"></i>
+            </div>
+
+            <div class="h2-signature-point-content">
+              <h3>Professional Setup</h3>
+              <p>
+                From equipment to aquascaping, every detail is carefully
+                installed.
+              </p>
+            </div>
+          </div>
+
+          <div class="h2-signature-point">
+            <span class="h2-signature-point-number">03</span>
+
+            <div class="h2-signature-point-icon">
+              <i data-lucide="heart-pulse" aria-hidden="true"></i>
+            </div>
+
+            <div class="h2-signature-point-content">
+              <h3>Ongoing Care</h3>
+              <p>
+                Regular maintenance keeps your aquarium healthy, balanced, and
+                beautiful.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="h2-interior-section" id="interior-design">
+      <div class="h2-interior-container">
+        <div class="h2-interior-top">
+          <div class="h2-interior-label">
+            <span></span>
+            AQUARIUM AS INTERIOR DESIGN
+          </div>
+
+          <div class="h2-interior-counter">
+            <span id="interiorCurrent">01</span>
+            <span class="interior-counter-line"></span>
+            <span>04</span>
+          </div>
+        </div>
+
+        <div class="h2-interior-main">
+          <div class="h2-interior-title">
+            <h2>
+              Your Aquarium
+              <br />
+              Should Feel
+              <span>Like Home.</span>
+            </h2>
+
+            <p>
+              We design aquariums around the way you live, work, and experience
+              your space. From the size and layout to the plants, lighting, and
+              aquatic life, every detail is thoughtfully planned to complement
+              your surroundings while creating a beautiful, healthy, and
+              easy-to-maintain aquarium.
+            </p>
+          </div>
+
+          <div class="h2-interior-visual">
+            <img
+              id="interiorImage"
+              src="images/space.jpeg"
+              alt="Aquarium interior design"
+            />
+
+            <div class="h2-interior-image-overlay"></div>
+
+            <div class="h2-interior-image-info">
+              <span id="interiorImageNumber">01</span>
+              <span id="interiorImageLabel">SPACE & PROPORTION</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="h2-interior-bottom">
+          <div class="h2-interior-info">
+            <div class="h2-interior-info-number" id="interiorNumber">01</div>
+
+            <div class="h2-interior-info-content">
+              <div class="h2-interior-icon">
+                <i id="interiorIcon" data-lucide="maximize-2"></i>
+              </div>
+
+              <div>
+                <h3 id="interiorTitle">Space & Proportion</h3>
+
+                <p id="interiorDescription">
+                  The aquarium is planned around the dimensions and natural flow
+                  of your room.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="h2-interior-next"
+            id="interiorNext"
+            aria-label="Next design principle"
+          >
+            <span>Next</span>
+            <i data-lucide="arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     HOME 2 — SECTION 4
+     WATER & FISH HEALTH
+     ========================================================= -->
+
+    <section class="h2-health-section" id="water-fish-health">
+      <div class="h2-health-container">
+        <!-- Heading -->
+        <div class="h2-health-heading">
+          <div class="h2-health-label">
+            <span></span>
+            WATER & FISH HEALTH
+            <span></span>
+          </div>
+
+          <h2>
+            A Healthier Aquarium Starts With
+            <span>Balance.</span>
+          </h2>
+
+          <p>
+            Healthy aquatic life begins with the right environment. We help
+            maintain water quality, equipment performance, and fish wellbeing
+            through thoughtful ongoing care.
+          </p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="h2-health-main">
+          <!-- Left Image -->
+          <div class="h2-health-visual">
+            <img
+              src="images/healthy.jpeg"
+              alt="Healthy aquarium environment"
+              class="h2-health-image"
+            />
+
+            <div class="h2-health-image-overlay"></div>
+
+            <div class="h2-health-image-label">
+              <span>HEALTHY</span>
+              <span>AQUATIC ENVIRONMENT</span>
+            </div>
+          </div>
+
+          <!-- Right Timeline -->
+          <div class="h2-health-timeline">
+            <div class="h2-health-line"></div>
+
+            <!-- Point 01 -->
+            <div class="h2-health-item">
+              <div class="h2-health-marker">
+                <span>01</span>
+                <i data-lucide="droplets" aria-hidden="true"></i>
+              </div>
+
+              <div class="h2-health-content">
+                <span class="h2-health-small">WATER QUALITY</span>
+                <h3>Water Quality</h3>
+                <p>
+                  Regular checks and maintenance help keep water clean, clear,
+                  and balanced.
+                </p>
+              </div>
+            </div>
+
+            <!-- Point 02 -->
+            <div class="h2-health-item">
+              <div class="h2-health-marker">
+                <span>02</span>
+                <i data-lucide="heart-pulse" aria-hidden="true"></i>
+              </div>
+
+              <div class="h2-health-content">
+                <span class="h2-health-small">FISH HEALTH</span>
+                <h3>Fish Health</h3>
+                <p>
+                  We observe fish behaviour and help identify potential concerns
+                  early.
+                </p>
+              </div>
+            </div>
+
+            <!-- Point 03 -->
+            <div class="h2-health-item">
+              <div class="h2-health-marker">
+                <span>03</span>
+                <i data-lucide="settings-2" aria-hidden="true"></i>
+              </div>
+
+              <div class="h2-health-content">
+                <span class="h2-health-small">EQUIPMENT</span>
+                <h3>Equipment</h3>
+                <p>
+                  Filters, pumps, lighting, and essential equipment are checked
+                  regularly.
+                </p>
+              </div>
+            </div>
+
+            <!-- Point 04 -->
+            <div class="h2-health-item">
+              <div class="h2-health-marker">
+                <span>04</span>
+                <i data-lucide="waves" aria-hidden="true"></i>
+              </div>
+
+              <div class="h2-health-content">
+                <span class="h2-health-small">BALANCE</span>
+                <h3>Balance</h3>
+                <p>
+                  A stable aquatic environment supports healthier fish, plants,
+                  and long-term growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     HOME 2 — SECTION 5
+     OUR AQUARIUM SETUP PROCESS
+     ========================================================= -->
+
+    <section class="h2-process-section" id="setup-process">
+      <div class="h2-process-container">
+        <!-- SECTION HEADING -->
+        <div class="h2-process-heading">
+          <div class="h2-process-label">
+            <span></span>
+            OUR AQUARIUM SETUP PROCESS
+            <span></span>
+          </div>
+
+          <h2>
+            From Idea to
+            <span>Living Aquarium.</span>
+          </h2>
+
+          <p>A simple process, handled with care.</p>
+        </div>
+
+        <!-- PROCESS CARDS -->
+        <div class="h2-process-grid">
+          <!-- 01 -->
+          <article class="h2-process-card">
+            <div class="h2-process-image">
+              <img
+                src="images/consultation.png"
+                alt="Aquarium consultation"
+              />
+
+              <span class="h2-process-number">01</span>
+            </div>
+
+            <div class="h2-process-content">
+              <div class="h2-process-icon">
+                <i data-lucide="messages-square" aria-hidden="true"></i>
+              </div>
+
+              <div>
+                <h3>Consultation</h3>
+
+                <p>
+                  Understand your space, requirements, preferences, and vision
+                  before we begin planning your aquarium.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article class="h2-process-card">
+            <div class="h2-process-image">
+              <img src="images/designing.png" alt="Aquarium design" />
+
+              <span class="h2-process-number">02</span>
+            </div>
+
+            <div class="h2-process-content">
+              <div class="h2-process-icon">
+                <i data-lucide="ruler" aria-hidden="true"></i>
+              </div>
+
+              <div>
+                <h3>Aquarium Design</h3>
+
+                <p>
+                  Plan the tank, layout, equipment, filtration system, plants,
+                  décor, and aquascape around your space.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 -->
+          <article class="h2-process-card">
+            <div class="h2-process-image">
+              <img
+                src="images/installation.png"
+                alt="Aquarium installation"
+              />
+
+              <span class="h2-process-number">03</span>
+            </div>
+
+            <div class="h2-process-content">
+              <div class="h2-process-icon">
+                <i data-lucide="settings-2" aria-hidden="true"></i>
+              </div>
+
+              <div>
+                <h3>Installation</h3>
+
+                <p>
+                  Professionally install the aquarium, filtration system,
+                  lighting, and essential equipment for a reliable setup.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 -->
+          <article class="h2-process-card">
+            <div class="h2-process-image">
+              <img
+                src="images/aquascaping_stocking.png"
+                alt="Aquascaping and stocking"
+              />
+
+              <span class="h2-process-number">04</span>
+            </div>
+
+            <div class="h2-process-content">
+              <div class="h2-process-icon">
+                <i data-lucide="sprout" aria-hidden="true"></i>
+              </div>
+
+              <div>
+                <h3>Aquascaping &amp; Stocking</h3>
+
+                <p>
+                  Add plants, décor, aquascaping elements, and suitable fish to
+                  create a balanced and beautiful environment.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 05 -->
+          <article class="h2-process-card">
+            <div class="h2-process-image">
+              <img src="images/ongoing_care.png" alt="Ongoing aquarium care" />
+
+              <span class="h2-process-number">05</span>
+            </div>
+
+            <div class="h2-process-content">
+              <div class="h2-process-icon">
+                <i data-lucide="heart-pulse" aria-hidden="true"></i>
+              </div>
+
+              <div>
+                <h3>Ongoing Care</h3>
+
+                <p>
+                  Maintain water quality, equipment performance, fish wellbeing,
+                  and overall aquarium health over time.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     HOME 2 — SECTION 6
+     AQUARIUM LIFECYCLE
+     ========================================================= -->
+
+    <section class="h2-lifecycle-section" id="aquarium-lifecycle">
+      <div class="h2-lifecycle-container">
+        <!-- SECTION HEADING -->
+        <div class="h2-lifecycle-heading">
+          <div class="h2-lifecycle-label">
+            <span></span>
+            AQUARIUM LIFECYCLE
+            <span></span>
+          </div>
+
+          <h2>
+            Care at Every Stage
+            <span>of Your Aquarium.</span>
+          </h2>
+
+          <p>
+            From the first setup to long-term care, we help your aquarium stay
+            balanced, healthy, and beautiful.
+          </p>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="h2-lifecycle-main">
+          <!-- LARGE IMAGE -->
+          <div class="h2-lifecycle-visual">
+            <img
+              src="images/beautiful.jpeg"
+              alt="Beautiful AquaCare aquarium"
+              class="h2-lifecycle-image"
+            />
+
+            <div class="h2-lifecycle-image-overlay"></div>
+
+            <div class="h2-lifecycle-image-caption">
+              <span>AQUACARE</span>
+              <strong>DESIGNED TO THRIVE</strong>
+            </div>
+          </div>
+
+          <!-- LIFECYCLE CONTENT -->
+          <div class="h2-lifecycle-content">
+            <!-- 01 -->
+            <article class="h2-lifecycle-item">
+              <div class="h2-lifecycle-item-top">
+                <span class="h2-lifecycle-number">01</span>
+
+                <div class="h2-lifecycle-icon">
+                  <i data-lucide="wrench" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <h3>Setup</h3>
+
+              <p>
+                Start with the right foundation. We professionally install your
+                aquarium, equipment, plants, and décor.
+              </p>
+            </article>
+
+            <!-- 02 -->
+            <article class="h2-lifecycle-item">
+              <div class="h2-lifecycle-item-top">
+                <span class="h2-lifecycle-number">02</span>
+
+                <div class="h2-lifecycle-icon">
+                  <i data-lucide="sprout" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <h3>Establish</h3>
+
+              <p>
+                Build a stable aquatic environment where your fish, plants, and
+                ecosystem can settle naturally.
+              </p>
+            </article>
+
+            <!-- 03 -->
+            <article class="h2-lifecycle-item">
+              <div class="h2-lifecycle-item-top">
+                <span class="h2-lifecycle-number">03</span>
+
+                <div class="h2-lifecycle-icon">
+                  <i data-lucide="refresh-cw" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <h3>Maintain</h3>
+
+              <p>
+                Regular cleaning, water care, equipment checks, and fish health
+                monitoring keep everything balanced.
+              </p>
+            </article>
+
+            <!-- 04 -->
+            <article class="h2-lifecycle-item">
+              <div class="h2-lifecycle-item-top">
+                <span class="h2-lifecycle-number">04</span>
+
+                <div class="h2-lifecycle-icon">
+                  <i data-lucide="heart-pulse" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <h3>Thrive</h3>
+
+              <p>
+                Enjoy a healthy, balanced, and beautiful aquarium that continues
+                to flourish over time.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     HOME 2 — SECTION 7
+     CLIENT EXPERIENCE
+     ========================================================= -->
+
+    <section class="h2-reviews-section" id="client-experience">
+      <div class="h2-reviews-container">
+        <!-- SECTION HEADING -->
+        <div class="h2-reviews-heading">
+          <div class="h2-reviews-label">
+            <span></span>
+            CLIENT EXPERIENCE
+            <span></span>
+          </div>
+
+          <h2>
+            Designed for You.
+            <span>Loved by Clients.</span>
+          </h2>
+
+          <p>
+            Thoughtful design, professional service, and dependable care from
+            the first conversation to long-term aquarium maintenance.
+          </p>
+        </div>
+
+        <!-- REVIEWS -->
+        <div class="h2-reviews-grid">
+          <!-- REVIEW 01 -->
+          <article class="h2-review-card">
+            <div class="h2-review-top">
+              <div class="h2-review-quote">
+                <i data-lucide="quote" aria-hidden="true"></i>
+              </div>
+
+              <div class="h2-review-rating" aria-label="5 out of 5 stars">
+                <i data-lucide="star" aria-hidden="true"></i>
+                <i data-lucide="star" aria-hidden="true"></i>
+                <i data-lucide="star" aria-hidden="true"></i>
+                <i data-lucide="star" aria-hidden="true"></i>
+                <i data-lucide="star" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <p class="h2-review-text">
+              AquaCare understood exactly what we wanted and created an aquarium
+              that fits beautifully into our living space.
+            </p>
+
+            <div class="h2-review-author">
+              <div class="h2-review-author-mark">A</div>
+
+              <div>
+                <strong>Arjun &amp; Priya</strong>
+                <span>Home Aquarium Client</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- REVIEW 02 -->
+          <article class="h2-review-card">
+            <div class="h2-review-top">
+              <div class="h2-review-quote">
+                <i data-lucide="quote" aria-hidden="true"></i>
+              </div>
+
+              <div class="h2-review-rating" aria-label="5 out of 5 stars">
+                <i data-lucide="star" aria-hidden="true"></i>
+                <i data-lucide="star" aria-hidden="true"></i>
+                <i data-lucide="star" aria-hidden="true"></i>
+                <i data-lucide="star" aria-hidden="true"></i>
+                <i data-lucide="star" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <p class="h2-review-text">
+              The entire setup process was smooth and professional. Every detail
+              was handled with great attention and care.
+            </p>
+
+            <div class="h2-review-author">
+              <div class="h2-review-author-mark">R</div>
+
+              <div>
+                <strong>Rahul Mehta</strong>
+                <span>Aquarium Setup Client</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- REVIEW 03 -->
+          <article class="h2-review-card">
+            <div class="h2-review-top">
+              <div class="h2-review-quote">
+                <i data-lucide="quote" aria-hidden="true"></i>
+              </div>
+
+              <div class="h2-review-rating" aria-label="5 out of 5 stars">
+                <i data-lucide="star" aria-hidden="true"></i>
+                <i data-lucide="star" aria-hidden="true"></i>
+                <i data-lucide="star" aria-hidden="true"></i>
+                <i data-lucide="star" aria-hidden="true"></i>
+                <i data-lucide="star" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <p class="h2-review-text">
+              The regular maintenance service makes everything so easy. Our
+              aquarium always looks clean, healthy, and beautiful.
+            </p>
+
+            <div class="h2-review-author">
+              <div class="h2-review-author-mark">S</div>
+
+              <div>
+                <strong>Sneha Kapoor</strong>
+                <span>Maintenance Client</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     HOME 2 — SECTION 8
+     FINAL CTA
+     ========================================================= -->
+
+<section class="h2-final-cta" id="home2-final-cta">
+
+  <div class="h2-final-cta-box">
+
+    <div class="h2-final-cta-decoration h2-cta-circle-one"></div>
+    <div class="h2-final-cta-decoration h2-cta-circle-two"></div>
+
+    <div class="h2-final-cta-label">
+      <span></span>
+      YOUR AQUARIUM STARTS HERE
+      <span></span>
+    </div>
+
+    <h2>
+      Imagine Your Space
+      <span>With Something Alive.</span>
+    </h2>
+
+    <p>
+      From peaceful living rooms to inspiring workspaces, we create aquariums
+      that complement your surroundings and bring a sense of nature into
+      everyday life. Tell us what you have in mind, and let's create an
+      aquatic environment designed around your space, your style, and the
+      life you want it to support.
+    </p>
+
+    <a href="contact.html#booking" class="h2-final-cta-button">
+      <span>Plan Your Aquarium</span>
+      <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+    </a>
+
+  </div>
+
+</section>
+
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+             BRAND
+        ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="AquaCare Home">
+              <img src="images/logo.png" alt="AquaCare Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h1>
+                <span class="aqua">Aqua</span><span class="care">Care</span>
+              </h1>
+
+              <p>Aquarium Setup & Maintenance</p>
+            </div>
+          </div>
+
+          <p class="footer-about">
+            AquaCare provides professional aquarium setup, maintenance,
+            aquascaping, and fish health services to create beautiful, clean,
+            and healthy aquatic environments.
+          </p>
+
+          <!-- =================================================
+                 SOCIAL MEDIA
+            ================================================== -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+             QUICK LINKS
+        ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+
+            <!-- <li>
+              <a href="home2.html"> Premium Home </a>
+            </li> -->
+
+            <li>
+              <a href="about.html"> About Us </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Services </a>
+            </li>
+
+            <li>
+              <a href="gallery.html"> Gallery </a>
+            </li>
+
+            <li>
+              <a href="pricing.html"> Pricing </a>
+            </li>
+
+            <li>
+              <a href="contact.html"> Contact </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+             OUR SERVICES
+        ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+
+          <ul>
+            <li>
+              <a href="service.html"> Aquarium Setup </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Aquarium Maintenance </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Aquascaping </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Fish Health Checkups </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Equipment Setup </a>
+            </li>
+
+            <li>
+              <a href="service.html"> Custom Aquarium Design </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+             AQUARIUM CARE
+        ================================================== -->
+
+        <div class="footer-col">
+          <h3>Information</h3>
+
+          <ul>
+            <li>
+              <a href="404.html"> 404 </a>
+            </li>
+
+            <li>
+              <a href="comming.html"> Comming Soon... </a>
+            </li>
+            <li>
+              <a href="index.html#lifecycle">Aquarium Lifecycle</a>
+            </li>
+            <li>
+              <a href="service-d.html"> Aquarium Setup </a>
+            </li>
+            <li>
+              <a href="pricing.html"> Care Palns </a>
+            </li>
+            <li>
+              <a href="service.html"> Fish Care Tips</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Hyderabad, India </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+919876543210"> +91 98765 43210 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@aquacare.com"> info@aquacare.com </a>
+            </li>
+
+            <!-- BUSINESS HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 9 AM – 7 PM </span>
+            </li>
+          </ul>
+
+          <!-- FOOTER CTA -->
+
+          <a href="book.html" class="footer-book-btn">
+            <span> Book a Site Visit </span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+         FOOTER BOTTOM
+    ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+          <span class="aqua">Aqua</span><span class="care">Care</span>. All
+          Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+     <script src="global.js"></script>
+    <script src="home2.js"></script>
+    
+  </body>
+</html>

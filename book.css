@@ -1,0 +1,1381 @@
+/* =========================================================
+   AQUACARE
+   BOOK A VISIT
+   COMPLETE STYLESHEET
+   ========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+
+:root {
+    --primary: #00A8C6;
+    --secondary: #00D4B4;
+
+    --background: #F4FAFC;
+    --surface: #FFFFFF;
+
+    --text: #102A36;
+    --muted: #637985;
+
+    --border: #D6E1E6;
+    --icon: #718592;
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: no;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background: var(--background);
+    color: var(--text);
+
+    font-family: "Outfit", sans-serif;
+
+    overflow-x: hidden;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: "Outfit", sans-serif;
+}
+
+button {
+    border: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.booking-page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   TOP CONTROLS
+   Screenshot-style circular buttons
+   ========================================================= */
+
+.page-controls {
+    position: fixed;
+
+    top: 14px;
+    right: 34px;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* Circular buttons */
+
+.control-btn {
+    width: 52px;
+    height: 52px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FFFFFF;
+    color: var(--primary);
+
+    border: 1px solid #D9E7EB;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Hide text — icon only */
+
+.control-btn span {
+    display: none;
+}
+
+
+/* Control icon */
+
+.control-btn svg {
+    width: 21px;
+    height: 21px;
+
+    color: var(--primary);
+
+    stroke-width: 1.8;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* Hover */
+
+.control-btn:hover {
+    background: #FFFFFF;
+    color: var(--primary);
+
+    border-color: var(--primary);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 18px rgba(0, 168, 198, 0.12);
+}
+
+.control-btn:hover svg {
+    color: var(--primary);
+}
+
+
+/* Active */
+
+.control-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.booking-intro {
+    width: 100%;
+
+    padding: 30px 30px 40px;
+}
+
+.intro-inner {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   AQUACARE LOGO + TITLE
+   ========================================================= */
+
+.booking-logo {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Fish logo */
+
+.booking-logo > a {
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 72px;
+}
+
+.booking-logo > a img {
+    width: 72px;
+    height: 72px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* Existing title structure */
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+}
+
+.logo-text h1 {
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Outfit", sans-serif;
+
+    font-size: 32px;
+    font-weight: 800;
+
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+
+    white-space: nowrap;
+}
+
+.logo-text p {
+    margin: 6px 0 0;
+    padding: 0;
+
+    color: var(--muted);
+
+    font-size: 9px;
+    font-weight: 500;
+
+    line-height: 1;
+
+    letter-spacing: 1.8px;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+.aqua {
+    color: var(--primary);
+}
+
+.care {
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   BOOK A VISIT LABEL
+   ========================================================= */
+
+.booking-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 17px;
+
+    margin-bottom: 16px;
+
+    color: var(--secondary);
+
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 3.5px;
+}
+
+
+
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.booking-intro > .intro-inner > h1 {
+    color: var(--text);
+
+    font-size: 3.5rem;
+    font-weight: 600;
+
+    line-height: 0.97;
+
+    letter-spacing: -3px;
+}
+
+.booking-intro > .intro-inner > h1 span {
+    display: block;
+
+    color: var(--primary);
+}
+
+.booking-intro > .intro-inner > p {
+    max-width: 700px;
+
+    margin: 20px auto 0;
+
+    color: var(--muted);
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FORM SECTION
+   ========================================================= */
+
+.booking-form-section {
+    width: 100%;
+
+    padding: 0 48px 60px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 920px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   FORM CARD
+   ========================================================= */
+
+.form-card {
+    width: 100%;
+
+    padding: 34px 36px 36px;
+
+    background: var(--surface);
+
+    border: 1.5px solid rgba(0, 168, 198, 0.28);
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 168, 198, 0.045);
+}
+
+
+/* =========================================================
+   FORM TITLE
+   ========================================================= */
+
+.form-title {
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    margin-bottom: 28px;
+
+    border-bottom: 1px solid rgba(0, 168, 198, 0.22);
+}
+
+.form-title > span {
+    display: block;
+
+    text-align: center;
+
+    margin-bottom: 7px;
+
+    color: var(--primary);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.form-title h2 {
+    margin: 0;
+
+    text-align: center;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    letter-spacing: -0.5px;
+}
+
+.form-title p {
+    margin-top: 6px;
+
+    text-align: center;
+
+    color: var(--muted);
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   FIELD ROWS
+   ========================================================= */
+
+.field-row {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    column-gap: 28px;
+
+    margin-bottom: 22px;
+}
+
+.field {
+    width: 100%;
+    min-width: 0;
+}
+
+.full-field {
+    width: 100%;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.field label {
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 8px;
+
+    color: var(--text);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   INPUT WRAPPERS
+   ========================================================= */
+
+.input-wrapper,
+.textarea-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+
+/* Input icon */
+
+.input-wrapper > svg {
+    position: absolute;
+
+    top: 50%;
+    left: 17px;
+
+    width: 19px;
+    height: 19px;
+
+    color: var(--icon);
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.input-wrapper input,
+.input-wrapper select {
+    width: 100%;
+    height: 54px;
+
+    display: block;
+
+    padding:
+        0
+        17px
+        0
+        51px;
+
+    background: var(--surface);
+    color: var(--text);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.input-wrapper input::placeholder,
+.textarea-wrapper textarea::placeholder {
+    color: #81919A;
+}
+
+
+/* =========================================================
+   SELECT
+   ========================================================= */
+
+.input-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+
+    cursor: pointer;
+
+    padding-right: 45px;
+}
+
+.select-arrow {
+    position: absolute;
+
+    top: 50%;
+    right: 19px;
+
+    width: 8px;
+    height: 8px;
+
+    border-right: 1.5px solid #607580;
+    border-bottom: 1.5px solid #607580;
+
+    transform:
+        translateY(-70%)
+        rotate(45deg);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.input-wrapper input:focus,
+.input-wrapper select:focus,
+.textarea-wrapper textarea:focus {
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 3px rgba(0, 168, 198, 0.08);
+}
+
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
+.textarea-wrapper > svg {
+    position: absolute;
+
+    top: 15px;
+    left: 17px;
+
+    width: 19px;
+    height: 19px;
+
+    color: var(--icon);
+
+    pointer-events: none;
+}
+
+.textarea-wrapper textarea {
+    width: 100%;
+    min-height: 125px;
+
+    display: block;
+
+    padding:
+        14px
+        17px
+        14px
+        51px;
+
+    background: var(--surface);
+    color: var(--text);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    outline: none;
+
+    resize: vertical;
+
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
+.submit-btn {
+    width: 100%;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 2px;
+
+    background: var(--primary);
+    color: #FFFFFF;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        gap 0.25s ease;
+}
+
+.submit-btn svg {
+    width: 19px;
+    height: 19px;
+}
+
+.submit-btn:hover {
+    background: var(--secondary);
+
+    gap: 14px;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 168, 198, 0.18);
+}
+
+
+/* =========================================================
+   SECURITY NOTE
+   ========================================================= */
+
+.security-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 15px;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+    text-align: center;
+}
+
+.security-note svg {
+    width: 17px;
+    height: 17px;
+
+    flex-shrink: 0;
+
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   RTL
+   ========================================================= */
+
+body.rtl {
+    direction: rtl;
+}
+
+body.rtl .page-controls {
+    right: auto;
+    left: 34px;
+}
+
+body.rtl .booking-logo {
+    flex-direction: row-reverse;
+}
+
+body.rtl .booking-label {
+    flex-direction: row-reverse;
+}
+
+body.rtl .logo-text {
+    align-items: flex-end;
+}
+
+body.rtl .input-wrapper > svg {
+    left: auto;
+    right: 17px;
+}
+
+body.rtl .input-wrapper input,
+body.rtl .input-wrapper select {
+    padding-left: 17px;
+    padding-right: 51px;
+}
+
+body.rtl .input-wrapper select {
+    padding-left: 45px;
+    padding-right: 51px;
+}
+
+body.rtl .select-arrow {
+    right: auto;
+    left: 19px;
+}
+
+body.rtl .textarea-wrapper > svg {
+    left: auto;
+    right: 17px;
+}
+
+body.rtl .textarea-wrapper textarea {
+    padding-left: 17px;
+    padding-right: 51px;
+}
+
+body.rtl .submit-btn svg {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode {
+    --background: #071A26;
+    --surface: #0D2936;
+
+    --text: #E8F7FA;
+    --muted: #91ABB5;
+
+    --border: rgba(145, 171, 181, 0.24);
+    --icon: #91ABB5;
+}
+
+
+/* Dark circular controls */
+
+body.dark-mode .control-btn {
+    background: #0D2936;
+
+    border-color:
+        rgba(145, 171, 181, 0.28);
+
+    color: var(--primary);
+}
+
+body.dark-mode .control-btn svg {
+    color: var(--primary);
+}
+
+body.dark-mode .control-btn:hover {
+    background: #0D2936;
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 6px 18px rgba(0, 168, 198, 0.16);
+}
+
+
+/* Dark form inputs */
+
+body.dark-mode .input-wrapper input,
+body.dark-mode .input-wrapper select,
+body.dark-mode .textarea-wrapper textarea {
+    background: #071A26;
+    color: var(--text);
+}
+
+body.dark-mode .input-wrapper input:focus,
+body.dark-mode .input-wrapper select:focus,
+body.dark-mode .textarea-wrapper textarea:focus {
+    background: #0D2936;
+}
+
+body.dark-mode .form-card {
+    border-color:
+        rgba(0, 168, 198, 0.32);
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 1024px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .booking-intro {
+        padding:
+            25px
+            30px
+            34px;
+    }
+
+    .booking-logo {
+        gap: 16px;
+        margin-bottom: 26px;
+    }
+
+    .booking-logo > a,
+    .booking-logo > a img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .booking-logo > a {
+        flex-basis: 62px;
+    }
+
+    .logo-text h1 {
+        font-size: 28px;
+    }
+
+    .logo-text p {
+        margin-top: 5px;
+
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .booking-intro > .intro-inner > h1 {
+        font-size: 58px;
+    }
+
+    .booking-intro > .intro-inner > p {
+        max-width: 560px;
+
+        font-size: 14px;
+    }
+
+    .booking-form-section {
+        padding:
+            0
+            30px
+            55px;
+    }
+
+    .form-container {
+        max-width: 860px;
+    }
+
+    .form-card {
+        padding: 30px;
+    }
+
+    .field-row {
+        column-gap: 22px;
+    }
+
+    .page-controls {
+        top: 12px;
+        right: 24px;
+    }
+
+    body.rtl .page-controls {
+        right: auto;
+        left: 24px;
+    }
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+   ========================================================= */
+
+@media (min-width: 1024px) and (max-height: 650px) {
+
+    .booking-intro {
+        padding-top: 20px;
+        padding-bottom: 28px;
+    }
+
+    .booking-logo {
+        margin-bottom: 20px;
+    }
+
+    .booking-logo > a,
+    .booking-logo > a img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .booking-logo > a {
+        flex-basis: 58px;
+    }
+
+    .logo-text h1 {
+        font-size: 27px;
+    }
+
+    .logo-text p {
+        font-size: 7px;
+    }
+
+    .booking-intro > .intro-inner > h1 {
+        font-size: 52px;
+    }
+
+    .booking-intro > .intro-inner > p {
+        margin-top: 12px;
+
+        font-size: 13px;
+    }
+
+    .booking-form-section {
+        padding-bottom: 40px;
+    }
+
+    .form-card {
+        padding: 28px 32px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .page-controls {
+        top: 10px;
+        right: 12px;
+
+        gap: 8px;
+    }
+
+    body.rtl .page-controls {
+        right: auto;
+        left: 12px;
+    }
+
+    .control-btn {
+        width: 42px;
+        height: 42px;
+    }
+
+    .control-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    /* Intro */
+
+    .booking-intro {
+        padding:
+            30px
+            18px
+            27px;
+    }
+
+
+    /* Logo */
+
+    .booking-logo {
+        gap: 12px;
+
+        margin-bottom: 22px;
+    }
+
+    .booking-logo > a,
+    .booking-logo > a img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .booking-logo > a {
+        flex-basis: 52px;
+    }
+
+    .logo-text h1 {
+        font-size: 23px;
+
+        letter-spacing: -1px;
+    }
+
+    .logo-text p {
+        margin-top: 4px;
+
+        font-size: 6.5px;
+
+        letter-spacing: 1.1px;
+    }
+
+
+    /* Label */
+
+    .booking-label {
+        gap: 7px;
+
+        margin-bottom: 13px;
+
+        font-size: 8px;
+
+        letter-spacing: 1.7px;
+    }
+
+    .booking-label span {
+        width: 20px;
+    }
+
+
+    /* Main heading */
+
+    .booking-intro > .intro-inner > h1 {
+        font-size: clamp(40px, 10vw, 52px);
+
+        letter-spacing: -1.7px;
+    }
+
+    .booking-intro > .intro-inner > p {
+        max-width: 330px;
+
+        margin-top: 14px;
+
+        font-size: 11px;
+
+        line-height: 1.55;
+    }
+
+
+    /* Form */
+
+    .booking-form-section {
+        padding:
+            0
+            18px
+            55px;
+    }
+
+    .form-card {
+        padding:
+            21px
+            20px
+            22px;
+
+        border-radius: 15px;
+    }
+
+
+    /* Form title */
+
+    .form-title {
+        padding-bottom: 17px;
+
+        margin-bottom: 21px;
+    }
+
+    .form-title > span {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .form-title h2 {
+        font-size: 24px;
+    }
+
+    .form-title p {
+        font-size: 10px;
+    }
+
+
+    /* One column */
+
+    .field-row {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+
+        margin-bottom: 16px;
+    }
+
+    .full-field {
+        margin-bottom: 16px;
+    }
+
+
+    /* Labels */
+
+    .field label {
+        margin-bottom: 6px;
+
+        font-size: 10px;
+    }
+
+
+    /* Inputs */
+
+    .input-wrapper input,
+    .input-wrapper select {
+        height: 44px;
+
+        font-size: 10px;
+    }
+
+    .input-wrapper input {
+        padding-left: 38px;
+    }
+
+    .input-wrapper > svg {
+        left: 12px;
+
+        width: 16px;
+        height: 16px;
+    }
+
+    .input-wrapper select {
+        padding-left: 38px;
+        padding-right: 35px;
+    }
+
+    .select-arrow {
+        right: 13px;
+
+        width: 6px;
+        height: 6px;
+    }
+
+
+    /* Textarea */
+
+    .textarea-wrapper textarea {
+        min-height: 110px;
+
+        padding:
+            12px
+            12px
+            12px
+            38px;
+
+        font-size: 10px;
+    }
+
+    .textarea-wrapper > svg {
+        top: 12px;
+        left: 12px;
+
+        width: 16px;
+        height: 16px;
+    }
+
+
+    /* Submit */
+
+    .submit-btn {
+        height: 46px;
+
+        font-size: 12px;
+    }
+
+    .submit-btn svg {
+        width: 15px;
+        height: 15px;
+    }
+
+
+    /* Security */
+
+    .security-note {
+        font-size: 8px;
+    }
+
+
+    /* Mobile RTL */
+
+    body.rtl .booking-logo {
+        flex-direction: row-reverse;
+    }
+
+    body.rtl .input-wrapper > svg {
+        left: auto;
+        right: 12px;
+    }
+
+    body.rtl .input-wrapper input,
+    body.rtl .input-wrapper select {
+        padding-left: 35px;
+        padding-right: 38px;
+    }
+
+    body.rtl .select-arrow {
+        right: auto;
+        left: 13px;
+    }
+
+    body.rtl .textarea-wrapper > svg {
+        left: auto;
+        right: 12px;
+    }
+
+    body.rtl .textarea-wrapper textarea {
+        padding-left: 12px;
+        padding-right: 38px;
+    }
+}
+
+
+/* =========================================================
+   SMALL DEVICES
+   ========================================================= */
+
+@media (max-width: 359px) {
+
+    .page-controls {
+        top: 8px;
+        right: 9px;
+
+        gap: 6px;
+    }
+
+    body.rtl .page-controls {
+        right: auto;
+        left: 9px;
+    }
+
+    .control-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .control-btn svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .booking-logo {
+        gap: 9px;
+    }
+
+    .booking-logo > a,
+    .booking-logo > a img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .booking-logo > a {
+        flex-basis: 45px;
+    }
+
+    .logo-text h1 {
+        font-size: 20px;
+    }
+
+    .logo-text p {
+        font-size: 5.5px;
+        letter-spacing: 0.9px;
+    }
+
+    .booking-intro {
+        padding:
+            27px
+            15px
+            24px;
+    }
+
+    .booking-form-section {
+        padding:
+            0
+            15px
+            45px;
+    }
+
+    .form-card {
+        padding:
+            17px
+            16px
+            18px;
+    }
+
+    .booking-intro > .intro-inner > h1 {
+        font-size: 36px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+}

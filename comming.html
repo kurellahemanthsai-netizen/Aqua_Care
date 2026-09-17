@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/logo.png" />
+    <title>Coming Soon</title>
+
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- =========================================
+       CSS
+       ========================================= -->
+
+    <link rel="stylesheet" href="comming.css" />
+  </head>
+
+  <body>
+    <!-- =========================================
+       PAGE CONTROLS
+       ========================================= -->
+
+    <div class="coming-controls">
+      <!-- RTL -->
+
+      <button
+        class="coming-control-btn"
+        id="rtlToggle"
+        type="button"
+        aria-label="Toggle RTL"
+        title="Toggle RTL"
+      >
+        <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+      </button>
+
+      <!-- DARK MODE -->
+
+      <button
+        class="coming-control-btn"
+        id="darkToggle"
+        type="button"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+      >
+        <i data-lucide="moon" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- =========================================
+       COMING SOON PAGE
+       ========================================= -->
+
+    <main class="coming-page">
+      <!-- =======================================
+         MAIN BOX
+         ======================================= -->
+
+      <div class="coming-card">
+        <!-- =====================================
+           LOGO
+           ===================================== -->
+
+        <div class="coming-logo">
+          <a href="index.html">
+            <img
+              src="images/logo.png"
+              alt="AquaCare Aquarium Setup & Maintenance"
+            />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="aqua">Aqua</span><span class="care">Care</span>
+            </h1>
+
+            <p>Aquarium Setup &amp; Maintenance</p>
+          </div>
+        </div>
+
+        <!-- =====================================
+           WATER ACCENT
+           ===================================== -->
+
+        <div class="water-accent" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- =====================================
+           COMING SOON TITLE
+           ===================================== -->
+
+        <div class="coming-title">
+          <h1>Coming <span>Soon</span></h1>
+
+          <h2>Something Amazing is on the Way</h2>
+
+          <p>
+            We're putting the finishing touches on an exciting new experience
+            for AquaCare. Stay connected and be the first to know when we
+            launch.
+          </p>
+        </div>
+
+        <!-- =====================================
+           COUNTDOWN
+           ===================================== -->
+
+        <div class="countdown">
+          <!-- DAYS -->
+
+          <div class="countdown-box">
+            <strong id="days"> 00 </strong>
+
+            <span> DAYS </span>
+          </div>
+
+          <div class="count-separator">:</div>
+
+          <!-- HOURS -->
+
+          <div class="countdown-box">
+            <strong id="hours"> 00 </strong>
+
+            <span> HOURS </span>
+          </div>
+
+          <div class="count-separator">:</div>
+
+          <!-- MINUTES -->
+
+          <div class="countdown-box">
+            <strong id="minutes"> 00 </strong>
+
+            <span> MINUTES </span>
+          </div>
+
+          <div class="count-separator">:</div>
+
+          <!-- SECONDS -->
+
+          <div class="countdown-box">
+            <strong id="seconds"> 00 </strong>
+
+            <span> SECONDS </span>
+          </div>
+        </div>
+
+        <!-- =====================================
+           EMAIL NOTIFICATION
+           ===================================== -->
+
+        <form class="notify-form" id="notifyForm">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            aria-label="Email address"
+            autocomplete="email"
+            required
+          />
+
+          <button type="submit" class="notify-button">
+            <i data-lucide="send" aria-hidden="true"></i>
+
+            <span> Notify Me </span>
+          </button>
+        </form>
+
+        <!-- =====================================
+           BACK HOME
+           ===================================== -->
+
+        <a href="index.html" class="home-button">
+          <i data-lucide="house" aria-hidden="true"></i>
+
+          <span> Back To Home </span>
+           <i data-lucide="arrow-right" aria-hidden="true"></i>
+        </a>
+
+        <!-- =====================================
+           FOOTER
+           ===================================== -->
+
+        <div class="coming-footer">
+          <span></span>
+
+          <p>AQUARIUM SETUP &amp; MAINTENANCE</p>
+
+          <span></span>
+        </div>
+      </div>
+    </main>
+
+    <!-- =========================================
+       JAVASCRIPT
+       ========================================= -->
+
+    <script src="comming.js"></script>
+    <script src="global.js"></script>
+  </body>
+</html>

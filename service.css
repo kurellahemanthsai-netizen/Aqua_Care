@@ -1,0 +1,3892 @@
+/* =========================================
+   SERVICES HERO
+========================================= */
+
+.services-hero-section {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  margin-top: 78px;
+  /* min-height:570px; */
+  display: flex;
+  align-items: center;
+  padding: 80px 60px;
+  font-family: "Outfit", sans-serif;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.services-hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.services-hero-background-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.services-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(7, 26, 38, 0.95) 0%,
+    rgba(7, 26, 38, 0.86) 35%,
+    rgba(7, 26, 38, 0.58) 65%,
+    rgba(7, 26, 38, 0.35) 100%
+  );
+}
+
+.services-hero-container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.services-hero-content {
+  width: 100%;
+  max-width: 700px;
+}
+
+.services-hero-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: var(--secondary);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+.services-hero-content h1 {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Outfit", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 1.03;
+  letter-spacing: -2.5px;
+}
+
+.services-hero-content h1 span {
+  display: block;
+  color: var(--primary);
+}
+
+.services-hero-content p {
+  max-width: 590px;
+  margin: 20px 0 0;
+  color: rgba(232, 247, 250, 0.82);
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.services-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.services-hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-family: "Outfit", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    gap 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.services-hero-button svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 2;
+}
+
+.services-hero-button-primary {
+  color: #ffffff;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.services-hero-button-primary:hover {
+  background: var(--secondary);
+  color: black;
+  border-color: var(--secondary);
+  transform: translateY(-2px);
+  gap: 11px;
+}
+
+.services-hero-button-secondary {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.services-hero-button-secondary:hover {
+  color: #ffffff;
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  gap: 11px;
+}
+
+/* =========================================================
+   SERVICES OVERVIEW
+   ========================================================= */
+
+.services-overview-section {
+  width: 100%;
+  padding: 110px 60px 120px;
+
+  background: var(--site-bg);
+
+  font-family: "Outfit", sans-serif;
+
+  overflow: hidden;
+}
+
+.services-overview-container {
+  width: 100%;
+  max-width: 1240px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.services-overview-heading {
+  max-width: 760px;
+
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+.services-overview-label {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 17px;
+
+  color: var(--secondary);
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  line-height: 1;
+
+  text-transform: uppercase;
+}
+
+
+
+.services-overview-heading h2 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 3.5rem;
+  font-weight: 500;
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+}
+
+.services-overview-heading h2 span {
+  display: block;
+
+  color: var(--primary);
+}
+
+.services-overview-heading p {
+  max-width: 560px;
+
+  margin: 20px auto 0;
+
+  color: var(--muted);
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   SERVICE CARDS GRID
+   ========================================================= */
+
+.services-overview-list {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+   ========================================================= */
+
+.services-overview-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  color: inherit;
+  text-decoration: none;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 35px rgba(16, 42, 54, 0.04);
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.services-overview-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(0, 168, 198, 0.35);
+
+  box-shadow:
+    0 20px 50px rgba(16, 42, 54, 0.10);
+}
+
+
+/* =========================================================
+   CARD IMAGE
+   ========================================================= */
+
+.services-overview-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 240px;
+
+  overflow: hidden;
+
+  background: var(--surface-hover);
+}
+
+.services-overview-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.6s ease;
+}
+
+.services-overview-card:hover
+.services-overview-image img {
+  transform: scale(1.07);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.services-overview-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(16, 42, 54, 0.02) 45%,
+      rgba(16, 42, 54, 0.30) 100%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   SERVICE NUMBER
+   ========================================================= */
+
+.services-overview-number {
+  position: absolute;
+
+  top: 18px;
+  left: 18px;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  color: #ffffff;
+
+  background: rgba(16, 42, 54, 0.55);
+
+  border: 1px solid rgba(255, 255, 255, 0.30);
+
+  border-radius: 50%;
+
+  backdrop-filter: blur(8px);
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   IMAGE ARROW
+   ========================================================= */
+
+.services-overview-card-arrow {
+  position: absolute;
+
+  right: 18px;
+  bottom: 18px;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  color: #ffffff;
+
+  background: rgba(16, 42, 54, 0.55);
+
+  border: 1px solid rgba(255, 255, 255, 0.30);
+
+  border-radius: 50%;
+
+  backdrop-filter: blur(8px);
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.services-overview-card-arrow svg {
+  width: 17px;
+  height: 17px;
+
+  stroke-width: 1.8;
+}
+
+.services-overview-card:hover
+.services-overview-card-arrow {
+  background: var(--primary);
+
+  transform: translate(2px, -2px);
+}
+
+
+/* =========================================================
+   CARD BODY
+   ========================================================= */
+
+.services-overview-card-body {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 17px;
+
+  padding: 28px 25px 18px;
+}
+
+
+/* =========================================================
+   SERVICE ICON
+   ========================================================= */
+
+.services-overview-icon {
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primary);
+
+  background: rgba(0, 168, 198, 0.06);
+
+  border: 1px solid rgba(0, 168, 198, 0.20);
+
+  border-radius: 50%;
+
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.services-overview-icon svg {
+  width: 18px;
+  height: 18px;
+
+  stroke-width: 1.8;
+}
+
+.services-overview-card:hover
+.services-overview-icon {
+  color: #ffffff;
+
+  background: var(--primary);
+
+  border-color: var(--primary);
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.services-overview-text {
+  min-width: 0;
+}
+
+.services-overview-category {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--secondary);
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 1.6px;
+
+  line-height: 1;
+
+  text-transform: uppercase;
+}
+
+.services-overview-text h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.4px;
+}
+
+.services-overview-text p {
+  margin: 11px 0 0;
+
+  color: var(--muted);
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   CARD FOOTER
+   ========================================================= */
+
+.services-overview-card-footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: auto;
+
+  padding: 18px 25px 22px;
+
+  border-top: 1px solid var(--border);
+
+  color: var(--muted);
+
+  font-size: 11px;
+  font-weight: 500;
+
+  letter-spacing: 0.3px;
+
+  transition:
+    color 0.3s ease;
+}
+
+.services-overview-card-footer svg {
+  width: 16px;
+  height: 16px;
+
+  color: var(--primary);
+
+  transition:
+    transform 0.3s ease;
+}
+
+.services-overview-card:hover
+.services-overview-card-footer {
+  color: var(--primary);
+}
+
+.services-overview-card:hover
+.services-overview-card-footer svg {
+  transform: translateX(5px);
+}
+
+
+
+/* =========================================================
+   HOW OUR SERVICE WORKS
+========================================================= */
+
+.service-process-section {
+  width: 100%;
+  padding: 105px 60px 110px;
+  background: var(--site-bg);
+  font-family: "Outfit", sans-serif;
+  overflow: hidden;
+}
+
+.service-process-container {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+/* ---------- HEADING ---------- */
+
+.service-process-heading {
+  max-width: 760px;
+  margin: 0 auto 58px;
+  text-align: center;
+}
+
+.service-process-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 17px;
+  color: var(--secondary);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+
+.service-process-heading h2 {
+  margin: 0;
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -2.2px;
+}
+
+.service-process-heading h2 span {
+  display: block;
+  color: var(--primary);
+}
+
+.service-process-heading p {
+  max-width: 590px;
+  margin: 18px auto 0;
+  color: var(--muted);
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* ---------- FOUR COLUMN GRID ---------- */
+
+.service-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* ---------- INDIVIDUAL ITEM ---------- */
+
+.service-process-item {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- IMAGE ---------- */
+
+.service-process-image {
+  width: 100%;
+  height: 275px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.service-process-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.service-process-item:hover .service-process-image img {
+  transform: scale(1.045);
+}
+
+/* ---------- NUMBER + ICON ---------- */
+
+.service-process-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  padding: 16px 0 10px;
+}
+
+.service-process-number {
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.service-process-icon {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 168, 198, 0.18);
+  border-radius: 50%;
+  background: rgba(0, 168, 198, 0.07);
+  color: var(--primary);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.service-process-icon svg {
+  width: 21px;
+  height: 21px;
+  stroke-width: 1.8;
+}
+
+.service-process-item:hover .service-process-icon {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ---------- CONTENT ---------- */
+
+.service-process-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.service-process-content h3 {
+  min-height: 34px;
+  margin: 0;
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+}
+
+.service-process-line {
+  width: 38px;
+  height: 2px;
+  margin: 13px 0 15px;
+  background: var(--secondary);
+  border-radius: 50px;
+}
+
+.service-process-content p {
+  max-width: 270px;
+  min-height: 72px;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Outfit", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+/* ---------- FOOTER ---------- */
+
+.service-process-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 65px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
+
+.service-process-footer-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.service-process-footer-symbol svg {
+  width: 23px;
+  height: 23px;
+  stroke-width: 1.7;
+}
+
+/* =========================================
+   AQUARIUM MAINTENANCE
+========================================= */
+
+.maintenance-section {
+  width: 100%;
+  padding: 100px 60px 110px;
+  background: var(--site-bg);
+  font-family: "Outfit", sans-serif;
+  overflow: hidden;
+}
+
+.maintenance-container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.maintenance-heading {
+  max-width: 760px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.maintenance-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  color: var(--secondary);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+
+.maintenance-heading h2 {
+  margin: 0;
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.maintenance-heading h2 span {
+  display: block;
+  color: var(--primary);
+}
+
+.maintenance-heading p {
+  max-width: 590px;
+  margin: 18px auto 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.maintenance-timeline {
+  position: relative;
+  width: 100%;
+}
+
+.maintenance-timeline::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 31px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    var(--primary),
+    var(--secondary),
+    var(--border)
+  );
+}
+
+/* =========================================
+   MAINTENANCE ITEM
+========================================= */
+
+.maintenance-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 64px 52px minmax(0, 1fr) 42px;
+  align-items: center;
+  gap: 22px;
+  min-height: 150px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+  transition:
+    background 0.3s ease,
+    padding 0.3s ease;
+}
+
+.maintenance-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.maintenance-item:hover {
+  padding-left: 12px;
+  padding-right: 12px;
+  background: rgba(0, 168, 198, 0.035);
+}
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.maintenance-marker {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+}
+
+.maintenance-marker span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  color: var(--primary);
+  background: var(--site-bg);
+  border: 1px solid rgba(0, 168, 198, 0.35);
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.maintenance-item:hover .maintenance-marker span {
+  color: #fff;
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.maintenance-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.maintenance-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.8;
+}
+
+.maintenance-item:hover .maintenance-icon {
+  color: var(--secondary);
+  border-color: rgba(0, 212, 180, 0.4);
+  background: rgba(0, 212, 180, 0.05);
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.maintenance-content {
+  min-width: 0;
+}
+
+.maintenance-category {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--secondary);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  line-height: 1;
+}
+
+.maintenance-content h3 {
+  margin: 0;
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+}
+
+.maintenance-content p {
+  max-width: 600px;
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* =========================================
+   CHECK
+========================================= */
+
+.maintenance-check {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.maintenance-check svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 2;
+}
+
+.maintenance-item:hover .maintenance-check {
+  color: #fff;
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.maintenance-footer {
+  margin-top: 35px;
+}
+
+.maintenance-footer-line {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+}
+
+.maintenance-footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 20px;
+}
+
+.maintenance-footer-content span {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+/* =========================================
+   RTL
+========================================= */
+
+body.rtl .maintenance-heading {
+  direction: rtl;
+}
+
+body.rtl .maintenance-item {
+  direction: rtl;
+}
+
+body.rtl .maintenance-timeline::before {
+  left: auto;
+  right: 31px;
+}
+
+body.rtl .maintenance-footer-content {
+  direction: rtl;
+}
+
+/* =========================================================
+   SECTION 4 — FISH HEALTH CHECKUPS
+========================================================= */
+
+.fish-health-section {
+  width: 100%;
+  padding: 105px 60px 110px;
+  background: var(--site-bg);
+  font-family: "Outfit", sans-serif;
+  overflow: hidden;
+}
+
+.fish-health-container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 75px;
+}
+
+/* =========================================================
+   IMAGE MOSAIC
+========================================================= */
+
+.fish-health-gallery {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.fish-health-image {
+  width: 100%;
+  height: 275px;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.fish-health-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.fish-health-image:hover img {
+  transform: scale(1.05);
+}
+
+.fish-health-image:hover {
+  border-color: rgba(0, 168, 198, 0.4);
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.fish-health-content {
+  width: 100%;
+  max-width: 590px;
+}
+
+.fish-health-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 16px;
+
+  color: var(--secondary);
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+
+.fish-health-content h2 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Outfit", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+
+  line-height: 1.03;
+  letter-spacing: -2px;
+}
+
+.fish-health-content h2 span {
+  display: block;
+  color: var(--primary);
+}
+
+.fish-health-intro {
+  max-width: 550px;
+
+  margin: 20px 0 30px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   HEALTH ITEMS
+========================================================= */
+
+.fish-health-item {
+  width: 100%;
+  min-height: 92px;
+
+  display: grid;
+  grid-template-columns: 48px 38px minmax(0, 1fr);
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid var(--border);
+
+  transition:
+    padding 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.fish-health-item:first-of-type {
+  border-top: 1px solid var(--border);
+}
+
+.fish-health-icon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primary);
+
+  background: rgba(0, 168, 198, 0.08);
+
+  border: 1px solid rgba(0, 168, 198, 0.15);
+
+  border-radius: 50%;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.fish-health-icon svg {
+  width: 20px;
+  height: 20px;
+
+  stroke-width: 1.8;
+}
+
+.fish-health-number {
+  align-self: start;
+
+  padding-top: 4px;
+
+  color: var(--primary);
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+.fish-health-item-content {
+  min-width: 0;
+}
+
+.fish-health-item-content h3 {
+  margin: 0 0 4px;
+
+  color: var(--text);
+
+  font-size: 16px;
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+.fish-health-item-content p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 1.55;
+}
+
+.fish-health-item:hover {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.fish-health-item:hover .fish-health-icon {
+  color: #ffffff;
+  background: var(--primary);
+
+  transform: translateY(-2px);
+}
+/* =========================================
+   TEAM MEMBERS
+========================================= */
+
+.team-section {
+  width: 100%;
+  padding: 105px 60px 110px;
+  background: var(--site-bg);
+  font-family: "Outfit", sans-serif;
+  overflow: hidden;
+}
+
+.team-container {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+/* HEADING */
+
+.team-heading {
+  max-width: 760px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.team-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 17px;
+  color: var(--secondary);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+
+.team-heading h2 {
+  margin: 0;
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -2px;
+}
+
+.team-heading h2 span {
+  display: block;
+  color: var(--primary);
+}
+
+.team-heading p {
+  max-width: 620px;
+  margin: 18px auto 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* TEAM GRID */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+}
+
+/* MEMBER */
+
+.team-member {
+  min-width: 0;
+}
+
+.team-image {
+  position: relative;
+  width: 100%;
+  height: 385px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.team-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(7, 26, 38, 0.28), transparent 45%);
+  pointer-events: none;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-member:hover .team-image img {
+  transform: scale(1.04);
+}
+
+/* NUMBER */
+
+.team-number {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  color: #fff;
+  background: rgba(0, 168, 198, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* INFO */
+
+.team-info {
+  padding: 20px 2px 0;
+}
+
+.team-role {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--primary);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+.team-info h3 {
+  margin: 0;
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.team-info p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+/* =========================================
+   SERVICES FINAL CTA
+========================================= */
+
+.services-cta-section {
+  width: 100%;
+  padding: 70px 60px 85px;
+  background: var(--site-bg);
+  font-family: "Outfit", sans-serif;
+  overflow: hidden;
+}
+
+.services-cta-container {
+  position: relative;
+  width: 100%;
+  max-width: 1050px;
+  min-height: 430px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  background: linear-gradient(
+    135deg,
+    rgba(0, 168, 198, 0.16),
+    rgba(0, 212, 180, 0.1)
+  );
+
+  border: 1px solid rgba(0, 168, 198, 0.22);
+  border-radius: 24px;
+}
+
+/* CONTENT */
+
+.services-cta-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 800px;
+  padding: 70px 35px;
+  text-align: center;
+}
+
+.services-cta-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 18px;
+
+  color: var(--secondary);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+
+.services-cta-content h2 {
+  margin: 0;
+
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.services-cta-content h2 span {
+  display: block;
+  color: var(--primary);
+}
+
+.services-cta-content p {
+  max-width: 650px;
+  margin: 19px auto 0;
+
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* BUTTONS */
+
+.services-cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.services-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-height: 43px;
+  padding: 12px 20px;
+
+  border-radius: 7px;
+
+  font-family: "Outfit", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    gap 0.3s ease;
+}
+
+.services-cta-button svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 2;
+}
+
+/* PRIMARY */
+
+.services-cta-button-primary {
+  color: #ffffff;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.services-cta-button-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: black;
+  transform: translateY(-2px);
+  gap: 11px;
+}
+
+/* SECONDARY */
+
+.services-cta-button-secondary {
+  color: var(--primary);
+  background: transparent;
+  border: 1px solid rgba(0, 168, 198, 0.45);
+}
+
+.services-cta-button-secondary:hover {
+  color: #ffffff;
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* DECORATIVE CIRCLES */
+
+.services-cta-decoration {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid rgba(0, 168, 198, 0.14);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.services-cta-circle-one {
+  width: 330px;
+  height: 330px;
+  left: -165px;
+  top: -165px;
+}
+
+.services-cta-circle-two {
+  width: 420px;
+  height: 420px;
+  right: -210px;
+  bottom: -210px;
+  border-color: rgba(0, 212, 180, 0.15);
+}
+
+/* WAVE DECORATION */
+
+.services-cta-waves {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  z-index: 1;
+  height: 100px;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.services-cta-waves span {
+  position: absolute;
+  left: -5%;
+  width: 110%;
+  height: 55px;
+
+  border-top: 1px solid rgba(0, 168, 198, 0.25);
+  border-radius: 50%;
+}
+
+.services-cta-waves span:nth-child(1) {
+  bottom: 25px;
+  transform: rotate(-2deg);
+}
+
+.services-cta-waves span:nth-child(2) {
+  bottom: 10px;
+  transform: rotate(2deg);
+}
+
+.services-cta-waves span:nth-child(3) {
+  bottom: -5px;
+  transform: rotate(-1deg);
+}
+
+
+/* =========================================================
+   SERVICES PAGE
+   RESPONSIVE MEDIA QUERIES
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL RESPONSIVE SAFETY
+   ========================================================= */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px - 740px
+   ========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  /* ---------- HERO ---------- */
+
+  .services-hero-section {
+    width: 100%;
+    height: auto;
+    min-height: 680px;
+    margin-top: 70px;
+    padding: 70px 18px 65px;
+    align-items: center;
+  }
+
+  .services-hero-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .services-hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .services-hero-label {
+    gap: 8px;
+    margin-bottom: 16px;
+    font-size: 9px;
+    letter-spacing: 1.7px;
+  }
+
+  .services-hero-label span {
+    width: 22px;
+    height: 2px;
+  }
+
+  .services-hero-content h1 {
+    font-size: 2.7rem;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+    overflow-wrap: break-word;
+  }
+
+  .services-hero-content p {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .services-hero-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .services-hero-button {
+    width: 100%;
+    min-height: 44px;
+    padding: 12px 16px;
+    font-size: 11px;
+  }
+
+
+  /* ---------- SERVICES OVERVIEW ---------- */
+
+  .services-overview-section {
+    width: 100%;
+    padding: 70px 18px 75px;
+  }
+
+  .services-overview-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .services-overview-heading {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 40px;
+  }
+
+  .services-overview-label {
+    gap: 8px;
+    margin-bottom: 14px;
+    font-size: 9px;
+    letter-spacing: 1.7px;
+  }
+
+  .services-overview-label span {
+    width: 22px;
+  }
+
+  .services-overview-heading h2 {
+    font-size: 2.45rem;
+    line-height: 1.08;
+    letter-spacing: -1.3px;
+  }
+
+  .services-overview-heading p {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .services-overview-list {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .services-overview-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .services-overview-image {
+    height: 220px;
+  }
+
+  .services-overview-number {
+    top: 14px;
+    left: 14px;
+    width: 38px;
+    height: 38px;
+    font-size: 10px;
+  }
+
+  .services-overview-card-arrow {
+    right: 14px;
+    bottom: 14px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .services-overview-card-body {
+    width: 100%;
+    gap: 13px;
+    padding: 22px 18px 16px;
+  }
+
+  .services-overview-icon {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+  }
+
+  .services-overview-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .services-overview-category {
+    margin-bottom: 7px;
+    font-size: 8px;
+    letter-spacing: 1.4px;
+  }
+
+  .services-overview-text h3 {
+    font-size: 19px;
+    line-height: 1.25;
+    letter-spacing: -0.25px;
+  }
+
+  .services-overview-text p {
+    margin-top: 8px;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .services-overview-card-footer {
+    padding: 15px 18px 18px;
+    font-size: 10px;
+  }
+
+
+  /* ---------- SERVICE PROCESS ---------- */
+
+  .service-process-section {
+    width: 100%;
+    padding: 70px 18px 75px;
+  }
+
+  .service-process-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .service-process-heading {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 38px;
+  }
+
+  .service-process-label {
+    gap: 7px;
+    margin-bottom: 14px;
+    font-size: 9px;
+    letter-spacing: 1.7px;
+  }
+
+  .service-process-label span {
+    width: 21px;
+  }
+
+  .service-process-heading h2 {
+    font-size: 2.45rem;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+  }
+
+  .service-process-heading p {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .service-process-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .service-process-item {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .service-process-image {
+    width: 100%;
+    height: 240px;
+    border-radius: 14px;
+  }
+
+  .service-process-meta {
+    min-height: 60px;
+    padding: 13px 0 8px;
+  }
+
+  .service-process-number {
+    font-size: 12px;
+  }
+
+  .service-process-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .service-process-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .service-process-content h3 {
+    min-height: auto;
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .service-process-line {
+    width: 30px;
+    margin: 10px 0 12px;
+  }
+
+  .service-process-content p {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .service-process-footer {
+    gap: 12px;
+    margin-top: 42px;
+    font-size: 8px;
+    letter-spacing: 1.8px;
+    text-align: center;
+  }
+
+  .service-process-footer-symbol svg {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  /* ---------- MAINTENANCE ---------- */
+
+  .maintenance-section {
+    width: 100%;
+    padding: 70px 18px 75px;
+  }
+
+  .maintenance-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .maintenance-heading {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 40px;
+  }
+
+  .maintenance-label {
+    gap: 8px;
+    margin-bottom: 14px;
+    font-size: 9px;
+    letter-spacing: 1.7px;
+  }
+
+  .maintenance-label span {
+    width: 22px;
+  }
+
+  .maintenance-heading h2 {
+    font-size: 2.45rem;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+  }
+
+  .maintenance-heading p {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .maintenance-timeline {
+    width: 100%;
+  }
+
+  .maintenance-timeline::before {
+    top: 25px;
+    bottom: 25px;
+    left: 25px;
+  }
+
+  .maintenance-item {
+    width: 100%;
+    grid-template-columns: 50px 42px minmax(0, 1fr) 34px;
+    gap: 10px;
+    min-height: 125px;
+    padding: 18px 0;
+  }
+
+  .maintenance-marker {
+    width: 50px;
+  }
+
+  .maintenance-marker span {
+    width: 48px;
+    height: 48px;
+    font-size: 9px;
+  }
+
+  .maintenance-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .maintenance-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .maintenance-category {
+    margin-bottom: 6px;
+    font-size: 8px;
+    letter-spacing: 1.3px;
+  }
+
+  .maintenance-content h3 {
+    font-size: 17px;
+    line-height: 1.25;
+  }
+
+  .maintenance-content p {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 1.55;
+  }
+
+  .maintenance-check {
+    width: 32px;
+    height: 32px;
+  }
+
+  .maintenance-check svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .maintenance-footer {
+    margin-top: 28px;
+  }
+
+  .maintenance-footer-content {
+    gap: 15px;
+    margin-top: 16px;
+  }
+
+  .maintenance-footer-content span {
+    font-size: 8px;
+    letter-spacing: 1.2px;
+    text-align: center;
+  }
+
+  body.rtl .maintenance-timeline::before {
+    left: auto;
+    right: 25px;
+  }
+
+
+  /* ---------- FISH HEALTH ---------- */
+
+  .fish-health-section {
+    width: 100%;
+    padding: 70px 18px 75px;
+  }
+
+  .fish-health-container {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .fish-health-gallery {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .fish-health-image {
+    width: 100%;
+    height: 175px;
+    border-radius: 13px;
+  }
+
+  .fish-health-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .fish-health-label {
+    gap: 7px;
+    margin-bottom: 13px;
+    font-size: 9px;
+    letter-spacing: 1.7px;
+  }
+
+  .fish-health-label span {
+    width: 21px;
+  }
+
+  .fish-health-content h2 {
+    font-size: 2.45rem;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+  }
+
+  .fish-health-intro {
+    width: 100%;
+    max-width: 100%;
+    margin: 16px 0 24px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .fish-health-item {
+    width: 100%;
+    grid-template-columns: 40px 34px minmax(0, 1fr);
+    gap: 9px;
+    min-height: 78px;
+    padding: 12px 0;
+  }
+
+  .fish-health-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .fish-health-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .fish-health-number {
+    padding-top: 3px;
+    font-size: 11px;
+  }
+
+  .fish-health-item-content h3 {
+    margin-bottom: 3px;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .fish-health-item-content p {
+    font-size: 10.5px;
+    line-height: 1.5;
+  }
+
+
+  /* ---------- TEAM ---------- */
+
+  .team-section {
+    width: 100%;
+    padding: 70px 18px 75px;
+  }
+
+  .team-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .team-heading {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 38px;
+  }
+
+  .team-label {
+    gap: 7px;
+    margin-bottom: 14px;
+    font-size: 9px;
+    letter-spacing: 1.7px;
+  }
+
+  .team-label span {
+    width: 21px;
+  }
+
+  .team-heading h2 {
+    font-size: 2.45rem;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+  }
+
+  .team-heading p {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .team-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+
+  .team-image {
+    width: 100%;
+    height: 330px;
+    border-radius: 14px;
+  }
+
+  .team-number {
+    top: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    font-size: 10px;
+  }
+
+  .team-info {
+    padding: 16px 2px 0;
+  }
+
+  .team-role {
+    margin-bottom: 6px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .team-info h3 {
+    font-size: 20px;
+  }
+
+  .team-info p {
+    margin-top: 4px;
+    font-size: 11px;
+  }
+
+
+  /* ---------- FINAL CTA ---------- */
+
+  .services-cta-section {
+    width: 100%;
+    padding: 55px 18px 65px;
+  }
+
+  .services-cta-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+    border-radius: 20px;
+  }
+
+  .services-cta-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 55px 18px;
+  }
+
+  .services-cta-label {
+    gap: 7px;
+    margin-bottom: 15px;
+    font-size: 9px;
+    letter-spacing: 1.7px;
+  }
+
+  .services-cta-label span {
+    width: 21px;
+  }
+
+  .services-cta-content h2 {
+    font-size: 2.45rem;
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+  }
+
+  .services-cta-content p {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .services-cta-actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .services-cta-button {
+    width: 100%;
+    min-height: 44px;
+    padding: 12px 16px;
+    font-size: 11px;
+  }
+
+  .services-cta-circle-one {
+    width: 220px;
+    height: 220px;
+    left: -110px;
+    top: -110px;
+  }
+
+  .services-cta-circle-two {
+    width: 280px;
+    height: 280px;
+    right: -140px;
+    bottom: -140px;
+  }
+
+  .services-cta-waves {
+    height: 70px;
+  }
+
+  .services-cta-waves span {
+    height: 40px;
+  }
+}
+
+
+/* =========================================================
+   iPAD MINI
+   768px - 820px
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  /* ---------- HERO ---------- */
+
+  .services-hero-section {
+    min-height: 650px;
+    height: 78vh;
+    margin-top: 78px;
+    padding: 70px 34px;
+  }
+
+  .services-hero-container {
+    max-width: 100%;
+  }
+
+  .services-hero-content {
+    max-width: 620px;
+  }
+
+  .services-hero-content h1 {
+    font-size: 3.8rem;
+    line-height: 1.05;
+    letter-spacing: -2px;
+  }
+
+  .services-hero-content p {
+    max-width: 540px;
+    font-size: 13px;
+  }
+
+  .services-hero-actions {
+    margin-top: 25px;
+  }
+
+
+  /* ---------- OVERVIEW ---------- */
+
+  .services-overview-section {
+    padding: 85px 30px 90px;
+  }
+
+  .services-overview-container {
+    max-width: 720px;
+  }
+
+  .services-overview-heading {
+    max-width: 650px;
+    margin-bottom: 48px;
+  }
+
+  .services-overview-heading h2 {
+    font-size: 3rem;
+    letter-spacing: -1.7px;
+  }
+
+  .services-overview-heading p {
+    max-width: 520px;
+  }
+
+  .services-overview-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .services-overview-image {
+    height: 210px;
+  }
+
+  .services-overview-card-body {
+    gap: 13px;
+    padding: 24px 20px 17px;
+  }
+
+  .services-overview-text h3 {
+    font-size: 19px;
+  }
+
+  .services-overview-text p {
+    font-size: 11px;
+  }
+
+  .services-overview-card-footer {
+    padding: 16px 20px 20px;
+  }
+
+
+  /* ---------- PROCESS ---------- */
+
+  .service-process-section {
+    padding: 85px 30px 90px;
+  }
+
+  .service-process-container {
+    max-width: 720px;
+  }
+
+  .service-process-heading {
+    max-width: 650px;
+    margin-bottom: 48px;
+  }
+
+  .service-process-heading h2 {
+    font-size: 3rem;
+    letter-spacing: -1.7px;
+  }
+
+  .service-process-heading p {
+    max-width: 520px;
+    font-size: 13px;
+  }
+
+  .service-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 38px 24px;
+  }
+
+  .service-process-image {
+    height: 250px;
+  }
+
+  .service-process-content h3 {
+    min-height: auto;
+    font-size: 20px;
+  }
+
+  .service-process-content p {
+    max-width: 100%;
+    min-height: auto;
+    font-size: 12px;
+  }
+
+  .service-process-footer {
+    margin-top: 48px;
+  }
+
+
+  /* ---------- MAINTENANCE ---------- */
+
+  .maintenance-section {
+    padding: 85px 30px 90px;
+  }
+
+  .maintenance-container {
+    max-width: 720px;
+  }
+
+  .maintenance-heading {
+    max-width: 650px;
+    margin-bottom: 48px;
+  }
+
+  .maintenance-heading h2 {
+    font-size: 3rem;
+    letter-spacing: -1.7px;
+  }
+
+  .maintenance-heading p {
+    max-width: 520px;
+  }
+
+  .maintenance-item {
+    grid-template-columns: 56px 46px minmax(0, 1fr) 36px;
+    gap: 14px;
+    min-height: 135px;
+    padding: 20px 0;
+  }
+
+  .maintenance-timeline::before {
+    left: 27px;
+  }
+
+  .maintenance-marker {
+    width: 56px;
+  }
+
+  .maintenance-marker span {
+    width: 54px;
+    height: 54px;
+  }
+
+  .maintenance-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .maintenance-content h3 {
+    font-size: 19px;
+  }
+
+  .maintenance-content p {
+    max-width: 100%;
+    font-size: 11.5px;
+  }
+
+  .maintenance-check {
+    width: 34px;
+    height: 34px;
+  }
+
+  body.rtl .maintenance-timeline::before {
+    left: auto;
+    right: 27px;
+  }
+
+
+  /* ---------- FISH HEALTH ---------- */
+
+  .fish-health-section {
+    padding: 85px 30px 90px;
+  }
+
+  .fish-health-container {
+    max-width: 720px;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .fish-health-gallery {
+    gap: 14px;
+  }
+
+  .fish-health-image {
+    height: 250px;
+  }
+
+  .fish-health-content {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .fish-health-content h2 {
+    font-size: 3rem;
+    letter-spacing: -1.7px;
+  }
+
+  .fish-health-intro {
+    max-width: 560px;
+  }
+
+  .fish-health-item {
+    grid-template-columns: 44px 36px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+
+  /* ---------- TEAM ---------- */
+
+  .team-section {
+    padding: 85px 30px 90px;
+  }
+
+  .team-container {
+    max-width: 720px;
+  }
+
+  .team-heading {
+    max-width: 650px;
+    margin-bottom: 48px;
+  }
+
+  .team-heading h2 {
+    font-size: 3rem;
+    letter-spacing: -1.7px;
+  }
+
+  .team-heading p {
+    max-width: 540px;
+    font-size: 13px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 22px;
+  }
+
+  .team-image {
+    height: 330px;
+  }
+
+  .team-info h3 {
+    font-size: 20px;
+  }
+
+
+  /* ---------- CTA ---------- */
+
+  .services-cta-section {
+    padding: 60px 30px 70px;
+  }
+
+  .services-cta-container {
+    max-width: 720px;
+    min-height: 390px;
+  }
+
+  .services-cta-content {
+    max-width: 650px;
+    padding: 60px 30px;
+  }
+
+  .services-cta-content h2 {
+    font-size: 3rem;
+    letter-spacing: -1.7px;
+  }
+
+  .services-cta-content p {
+    max-width: 560px;
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   iPAD PRO 11"
+   821px - 1024px
+   ========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  /* ---------- HERO ---------- */
+
+  .services-hero-section {
+    min-height: 650px;
+    height: 78vh;
+    margin-top: 78px;
+    padding: 75px 42px;
+  }
+
+  .services-hero-container {
+    max-width: 900px;
+  }
+
+  .services-hero-content {
+    max-width: 650px;
+  }
+
+  .services-hero-content h1 {
+    font-size: 4.1rem;
+    line-height: 1.04;
+    letter-spacing: -2.2px;
+  }
+
+  .services-hero-content p {
+    max-width: 560px;
+    font-size: 13px;
+  }
+
+
+  /* ---------- OVERVIEW ---------- */
+
+  .services-overview-section {
+    padding: 95px 38px 105px;
+  }
+
+  .services-overview-container {
+    max-width: 920px;
+  }
+
+  .services-overview-heading {
+    max-width: 700px;
+    margin-bottom: 55px;
+  }
+
+  .services-overview-heading h2 {
+    font-size: 3.2rem;
+    letter-spacing: -1.8px;
+  }
+
+  .services-overview-heading p {
+    max-width: 550px;
+  }
+
+  .services-overview-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .services-overview-image {
+    height: 200px;
+  }
+
+  .services-overview-card-body {
+    gap: 11px;
+    padding: 23px 18px 16px;
+  }
+
+  .services-overview-icon {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+  }
+
+  .services-overview-text h3 {
+    font-size: 18px;
+  }
+
+  .services-overview-text p {
+    font-size: 11px;
+    line-height: 1.55;
+  }
+
+  .services-overview-card-footer {
+    padding: 16px 18px 19px;
+  }
+
+
+  /* ---------- PROCESS ---------- */
+
+  .service-process-section {
+    padding: 95px 38px 105px;
+  }
+
+  .service-process-container {
+    max-width: 920px;
+  }
+
+  .service-process-heading {
+    max-width: 700px;
+    margin-bottom: 52px;
+  }
+
+  .service-process-heading h2 {
+    font-size: 3.2rem;
+    letter-spacing: -1.8px;
+  }
+
+  .service-process-heading p {
+    max-width: 560px;
+    font-size: 13px;
+  }
+
+  .service-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 42px 28px;
+  }
+
+  .service-process-image {
+    height: 270px;
+  }
+
+  .service-process-content h3 {
+    min-height: auto;
+    font-size: 21px;
+  }
+
+  .service-process-content p {
+    max-width: 100%;
+    min-height: auto;
+    font-size: 12px;
+  }
+
+  .service-process-footer {
+    margin-top: 55px;
+  }
+
+
+  /* ---------- MAINTENANCE ---------- */
+
+  .maintenance-section {
+    padding: 95px 38px 105px;
+  }
+
+  .maintenance-container {
+    max-width: 900px;
+  }
+
+  .maintenance-heading {
+    max-width: 700px;
+    margin-bottom: 55px;
+  }
+
+  .maintenance-heading h2 {
+    font-size: 3.2rem;
+    letter-spacing: -1.8px;
+  }
+
+  .maintenance-heading p {
+    max-width: 550px;
+  }
+
+  .maintenance-item {
+    grid-template-columns: 60px 50px minmax(0, 1fr) 38px;
+    gap: 18px;
+    min-height: 140px;
+    padding: 20px 0;
+  }
+
+  .maintenance-timeline::before {
+    left: 29px;
+  }
+
+  .maintenance-marker {
+    width: 60px;
+  }
+
+  .maintenance-marker span {
+    width: 58px;
+    height: 58px;
+  }
+
+  .maintenance-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .maintenance-content h3 {
+    font-size: 21px;
+  }
+
+  .maintenance-content p {
+    max-width: 100%;
+    font-size: 12px;
+  }
+
+  .maintenance-check {
+    width: 36px;
+    height: 36px;
+  }
+
+  body.rtl .maintenance-timeline::before {
+    left: auto;
+    right: 29px;
+  }
+
+
+  /* ---------- FISH HEALTH ---------- */
+
+  .fish-health-section {
+    padding: 95px 38px 105px;
+  }
+
+  .fish-health-container {
+    max-width: 920px;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+  }
+
+  .fish-health-gallery {
+    gap: 13px;
+  }
+
+  .fish-health-image {
+    height: 230px;
+  }
+
+  .fish-health-content {
+    max-width: 100%;
+  }
+
+  .fish-health-content h2 {
+    font-size: 3.2rem;
+    letter-spacing: -1.8px;
+  }
+
+  .fish-health-intro {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .fish-health-item {
+    grid-template-columns: 42px 34px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .fish-health-item-content h3 {
+    font-size: 15px;
+  }
+
+  .fish-health-item-content p {
+    font-size: 11px;
+  }
+
+
+  /* ---------- TEAM ---------- */
+
+  .team-section {
+    padding: 95px 38px 105px;
+  }
+
+  .team-container {
+    max-width: 920px;
+  }
+
+  .team-heading {
+    max-width: 700px;
+    margin-bottom: 52px;
+  }
+
+  .team-heading h2 {
+    font-size: 3.2rem;
+    letter-spacing: -1.8px;
+  }
+
+  .team-heading p {
+    max-width: 580px;
+    font-size: 13px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .team-image {
+    height: 300px;
+  }
+
+  .team-number {
+    top: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .team-info {
+    padding-top: 16px;
+  }
+
+  .team-role {
+    font-size: 9px;
+  }
+
+  .team-info h3 {
+    font-size: 18px;
+  }
+
+  .team-info p {
+    font-size: 11px;
+  }
+
+
+  /* ---------- CTA ---------- */
+
+  .services-cta-section {
+    padding: 65px 38px 75px;
+  }
+
+  .services-cta-container {
+    max-width: 900px;
+    min-height: 400px;
+  }
+
+  .services-cta-content {
+    max-width: 720px;
+    padding: 65px 35px;
+  }
+
+  .services-cta-content h2 {
+    font-size: 3.2rem;
+    letter-spacing: -1.8px;
+  }
+
+  .services-cta-content p {
+    max-width: 600px;
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   NEST HUB
+   EXACTLY 1024px × 600px
+   IMPORTANT:
+   THIS MUST REMAIN AFTER THE iPAD PRO QUERY
+   ========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  /* ---------- HERO ---------- */
+
+  .services-hero-section {
+    height: 520px;
+    min-height: 520px;
+    margin-top: 70px;
+    padding: 45px 38px;
+  }
+
+  .services-hero-container {
+    max-width: 920px;
+  }
+
+  .services-hero-content {
+    max-width: 610px;
+  }
+
+  .services-hero-label {
+    margin-bottom: 12px;
+    font-size: 8px;
+  }
+
+  .services-hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.02;
+    letter-spacing: -1.7px;
+  }
+
+  .services-hero-content p {
+    max-width: 500px;
+    margin-top: 14px;
+    font-size: 11px;
+    line-height: 1.55;
+  }
+
+  .services-hero-actions {
+    gap: 9px;
+    margin-top: 18px;
+  }
+
+  .services-hero-button {
+    min-height: 38px;
+    padding: 10px 16px;
+    font-size: 9px;
+  }
+
+
+  /* ---------- OVERVIEW ---------- */
+
+  .services-overview-section {
+    padding: 60px 38px 65px;
+  }
+
+  .services-overview-container {
+    max-width: 920px;
+  }
+
+  .services-overview-heading {
+    max-width: 650px;
+    margin-bottom: 38px;
+  }
+
+  .services-overview-label {
+    margin-bottom: 11px;
+    font-size: 8px;
+  }
+
+  .services-overview-heading h2 {
+    font-size: 2.45rem;
+    line-height: 1.03;
+    letter-spacing: -1.3px;
+  }
+
+  .services-overview-heading p {
+    max-width: 500px;
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .services-overview-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .services-overview-image {
+    height: 170px;
+  }
+
+  .services-overview-number {
+    top: 10px;
+    left: 10px;
+    width: 32px;
+    height: 32px;
+    font-size: 8px;
+  }
+
+  .services-overview-card-arrow {
+    right: 10px;
+    bottom: 10px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .services-overview-card-body {
+    gap: 9px;
+    padding: 17px 14px 12px;
+  }
+
+  .services-overview-icon {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+  }
+
+  .services-overview-icon svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .services-overview-category {
+    margin-bottom: 5px;
+    font-size: 7px;
+    letter-spacing: 1.1px;
+  }
+
+  .services-overview-text h3 {
+    font-size: 16px;
+    line-height: 1.15;
+  }
+
+  .services-overview-text p {
+    margin-top: 6px;
+    font-size: 9px;
+    line-height: 1.45;
+  }
+
+  .services-overview-card-footer {
+    padding: 12px 14px 14px;
+    font-size: 8px;
+  }
+
+
+  /* ---------- PROCESS ---------- */
+
+  .service-process-section {
+    padding: 60px 38px 65px;
+  }
+
+  .service-process-container {
+    max-width: 920px;
+  }
+
+  .service-process-heading {
+    max-width: 650px;
+    margin-bottom: 38px;
+  }
+
+  .service-process-label {
+    margin-bottom: 11px;
+    font-size: 8px;
+  }
+
+  .service-process-heading h2 {
+    font-size: 2.45rem;
+    line-height: 1.03;
+    letter-spacing: -1.3px;
+  }
+
+  .service-process-heading p {
+    max-width: 500px;
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .service-process-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .service-process-image {
+    height: 190px;
+    border-radius: 12px;
+  }
+
+  .service-process-meta {
+    min-height: 52px;
+    padding: 10px 0 6px;
+  }
+
+  .service-process-number {
+    font-size: 10px;
+  }
+
+  .service-process-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .service-process-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .service-process-content h3 {
+    min-height: auto;
+    font-size: 16px;
+    line-height: 1.15;
+  }
+
+  .service-process-line {
+    width: 26px;
+    margin: 8px 0 9px;
+  }
+
+  .service-process-content p {
+    max-width: 100%;
+    min-height: auto;
+    font-size: 9px;
+    line-height: 1.45;
+  }
+
+  .service-process-footer {
+    gap: 12px;
+    margin-top: 35px;
+    font-size: 7px;
+    letter-spacing: 1.5px;
+  }
+
+  .service-process-footer-symbol svg {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* ---------- MAINTENANCE ---------- */
+
+  .maintenance-section {
+    padding: 60px 38px 65px;
+  }
+
+  .maintenance-container {
+    max-width: 900px;
+  }
+
+  .maintenance-heading {
+    max-width: 650px;
+    margin-bottom: 38px;
+  }
+
+  .maintenance-label {
+    margin-bottom: 11px;
+    font-size: 8px;
+  }
+
+  .maintenance-heading h2 {
+    font-size: 2.45rem;
+    line-height: 1.03;
+    letter-spacing: -1.3px;
+  }
+
+  .maintenance-heading p {
+    max-width: 500px;
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .maintenance-item {
+    grid-template-columns: 48px 40px minmax(0, 1fr) 32px;
+    gap: 11px;
+    min-height: 105px;
+    padding: 14px 0;
+  }
+
+  .maintenance-timeline::before {
+    top: 22px;
+    bottom: 22px;
+    left: 24px;
+  }
+
+  .maintenance-marker {
+    width: 48px;
+  }
+
+  .maintenance-marker span {
+    width: 46px;
+    height: 46px;
+    font-size: 8px;
+  }
+
+  .maintenance-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .maintenance-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .maintenance-category {
+    margin-bottom: 5px;
+    font-size: 7px;
+    letter-spacing: 1.1px;
+  }
+
+  .maintenance-content h3 {
+    font-size: 16px;
+    line-height: 1.15;
+  }
+
+  .maintenance-content p {
+    margin-top: 5px;
+    max-width: 100%;
+    font-size: 9px;
+    line-height: 1.45;
+  }
+
+  .maintenance-check {
+    width: 30px;
+    height: 30px;
+  }
+
+  .maintenance-check svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .maintenance-footer {
+    margin-top: 22px;
+  }
+
+  .maintenance-footer-content {
+    gap: 18px;
+    margin-top: 13px;
+  }
+
+  .maintenance-footer-content span {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+
+  body.rtl .maintenance-timeline::before {
+    left: auto;
+    right: 24px;
+  }
+
+
+  /* ---------- FISH HEALTH ---------- */
+
+  .fish-health-section {
+    padding: 60px 38px 65px;
+  }
+
+  .fish-health-container {
+    max-width: 920px;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 35px;
+  }
+
+  .fish-health-gallery {
+    gap: 10px;
+  }
+
+  .fish-health-image {
+    height: 190px;
+    border-radius: 12px;
+  }
+
+  .fish-health-content {
+    max-width: 100%;
+  }
+
+  .fish-health-label {
+    margin-bottom: 11px;
+    font-size: 8px;
+  }
+
+  .fish-health-content h2 {
+    font-size: 2.45rem;
+    line-height: 1.03;
+    letter-spacing: -1.3px;
+  }
+
+  .fish-health-intro {
+    max-width: 100%;
+    margin: 13px 0 18px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .fish-health-item {
+    grid-template-columns: 38px 30px minmax(0, 1fr);
+    gap: 8px;
+    min-height: 65px;
+    padding: 9px 0;
+  }
+
+  .fish-health-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .fish-health-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .fish-health-number {
+    padding-top: 2px;
+    font-size: 10px;
+  }
+
+  .fish-health-item-content h3 {
+    margin-bottom: 2px;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .fish-health-item-content p {
+    font-size: 9px;
+    line-height: 1.4;
+  }
+
+
+  /* ---------- TEAM ---------- */
+
+  .team-section {
+    padding: 60px 38px 65px;
+  }
+
+  .team-container {
+    max-width: 920px;
+  }
+
+  .team-heading {
+    max-width: 650px;
+    margin-bottom: 38px;
+  }
+
+  .team-label {
+    margin-bottom: 11px;
+    font-size: 8px;
+  }
+
+  .team-heading h2 {
+    font-size: 2.45rem;
+    line-height: 1.03;
+    letter-spacing: -1.3px;
+  }
+
+  .team-heading p {
+    max-width: 520px;
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .team-image {
+    height: 235px;
+    border-radius: 12px;
+  }
+
+  .team-number {
+    top: 9px;
+    right: 9px;
+    width: 30px;
+    height: 30px;
+    font-size: 8px;
+  }
+
+  .team-info {
+    padding: 12px 1px 0;
+  }
+
+  .team-role {
+    margin-bottom: 5px;
+    font-size: 7px;
+    letter-spacing: 1.1px;
+  }
+
+  .team-info h3 {
+    font-size: 16px;
+    line-height: 1.15;
+  }
+
+  .team-info p {
+    margin-top: 3px;
+    font-size: 9px;
+    line-height: 1.4;
+  }
+
+
+  /* ---------- CTA ---------- */
+
+  .services-cta-section {
+    padding: 45px 38px 55px;
+  }
+
+  .services-cta-container {
+    max-width: 900px;
+    min-height: 300px;
+    border-radius: 18px;
+  }
+
+  .services-cta-content {
+    max-width: 700px;
+    padding: 45px 30px;
+  }
+
+  .services-cta-label {
+    margin-bottom: 12px;
+    font-size: 8px;
+  }
+
+  .services-cta-content h2 {
+    font-size: 2.45rem;
+    line-height: 1.03;
+    letter-spacing: -1.3px;
+  }
+
+  .services-cta-content p {
+    max-width: 560px;
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .services-cta-actions {
+    gap: 9px;
+    margin-top: 18px;
+  }
+
+  .services-cta-button {
+    min-height: 38px;
+    padding: 10px 16px;
+    font-size: 9px;
+  }
+
+  .services-cta-circle-one {
+    width: 240px;
+    height: 240px;
+    left: -120px;
+    top: -120px;
+  }
+
+  .services-cta-circle-two {
+    width: 300px;
+    height: 300px;
+    right: -150px;
+    bottom: -150px;
+  }
+
+  .services-cta-waves {
+    height: 70px;
+  }
+}
+
+
+/* =========================================================
+   RTL ALIGNMENT
+   Applies only when RTL is enabled
+   ========================================================= */
+
+body.rtl .services-hero-content,
+body.rtl .maintenance-content,
+body.rtl .fish-health-content,
+body.rtl .services-cta-content {
+  direction: rtl;
+}
+
+body.rtl .services-hero-label,
+body.rtl .services-overview-label,
+body.rtl .service-process-label,
+body.rtl .maintenance-label,
+body.rtl .fish-health-label,
+body.rtl .team-label,
+body.rtl .services-cta-label {
+  direction: rtl;
+}
+
+body.rtl .services-overview-card-body {
+  direction: rtl;
+}
+
+body.rtl .maintenance-item {
+  direction: rtl;
+}
+
+body.rtl .fish-health-item {
+  direction: rtl;
+}
+
+body.rtl .team-info {
+  direction: rtl;
+}
+
+body.rtl .maintenance-timeline::before {
+  left: auto;
+  right: 31px;
+}
+
+body.rtl .services-overview-number {
+  left: auto;
+  right: 18px;
+}
+
+body.rtl .services-overview-card-arrow {
+  right: auto;
+  left: 18px;
+}
+
+body.rtl .team-number {
+  right: auto;
+  left: 16px;
+}
+
+
+/* =========================================================
+   RTL — MOBILE POSITION CORRECTIONS
+   ========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  body.rtl .services-overview-number {
+    right: 14px;
+    left: auto;
+  }
+
+  body.rtl .services-overview-card-arrow {
+    left: 14px;
+    right: auto;
+  }
+
+  body.rtl .team-number {
+    left: 12px;
+    right: auto;
+  }
+
+  body.rtl .maintenance-timeline::before {
+    left: auto;
+    right: 25px;
+  }
+}
+
+
+/* =========================================================
+   RTL — iPAD MINI
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  body.rtl .maintenance-timeline::before {
+    left: auto;
+    right: 27px;
+  }
+
+  body.rtl .services-overview-number {
+    right: 14px;
+    left: auto;
+  }
+
+  body.rtl .services-overview-card-arrow {
+    left: 14px;
+    right: auto;
+  }
+
+  body.rtl .team-number {
+    left: 12px;
+    right: auto;
+  }
+}
+
+
+/* =========================================================
+   RTL — iPAD PRO 11"
+   ========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  body.rtl .maintenance-timeline::before {
+    left: auto;
+    right: 29px;
+  }
+
+  body.rtl .services-overview-number {
+    right: 14px;
+    left: auto;
+  }
+
+  body.rtl .services-overview-card-arrow {
+    left: 14px;
+    right: auto;
+  }
+
+  body.rtl .team-number {
+    left: 12px;
+    right: auto;
+  }
+}
+
+
+/* =========================================================
+   RTL — NEST HUB
+   ========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  body.rtl .maintenance-timeline::before {
+    left: auto;
+    right: 24px;
+  }
+
+  body.rtl .services-overview-number {
+    right: 10px;
+    left: auto;
+  }
+
+  body.rtl .services-overview-card-arrow {
+    left: 10px;
+    right: auto;
+  }
+
+  body.rtl .team-number {
+    left: 9px;
+    right: auto;
+  }
+}
