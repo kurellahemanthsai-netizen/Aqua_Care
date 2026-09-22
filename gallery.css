@@ -495,6 +495,7 @@
 
 .gallery-grid-section {
   width: 100%;
+  margin-top: -90px;
   padding: 105px 60px 115px;
   background: var(--site-bg);
   font-family: "Outfit", sans-serif;
@@ -503,7 +504,7 @@
 
 .gallery-grid-container {
   width: 100%;
-  max-width: 1380px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -759,6 +760,7 @@
 .gallery-featured-section {
   width: 100%;
   padding: 105px 60px 115px;
+  margin-top: -90px;
   background: var(--site-bg);
   font-family: "Outfit", sans-serif;
   overflow: hidden;
@@ -766,7 +768,7 @@
 
 .gallery-featured-container {
   width: 100%;
-  max-width: 1380px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -1033,6 +1035,7 @@
 .gallery-before-after-section {
   width: 100%;
   padding: 105px 60px 115px;
+  margin-top: -90px;
   background: var(--site-bg);
   font-family: "Outfit", sans-serif;
   overflow: hidden;
@@ -1040,7 +1043,7 @@
 
 .gallery-before-after-container {
   width: 100%;
-  max-width: 1380px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 

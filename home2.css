@@ -1441,6 +1441,7 @@ body.dark-mode .h2-interior-next {
 .h2-health-section {
   width: 100%;
   padding: 95px 60px 100px;
+  margin-top: -30px;
   background: #f4fafc;
   color: #102a36;
   font-family: "Outfit", sans-serif;
@@ -1750,7 +1751,7 @@ body.dark-mode .h2-health-content p {
 .h2-process-section {
   width: 100%;
   padding: 90px 60px 95px;
-
+margin-top: -50px;
   background: #f4fafc;
   color: #102a36;
 
@@ -2041,7 +2042,7 @@ body.dark-mode .h2-process-content p {
 .h2-lifecycle-section {
   width: 100%;
   padding: 95px 60px 100px;
-
+  margin-top: -50px;
   background: #f4fafc;
   color: #102a36;
 
@@ -2372,7 +2373,7 @@ body.dark-mode .h2-lifecycle-item p {
 
 .h2-reviews-section {
   width: 100%;
-
+  margin-top: -50px;
   padding: 90px 60px 95px;
 
   background: #071a26;

@@ -429,6 +429,7 @@
 
 .space-section {
   width: 100%;
+  margin-top: -90px;
   padding: 110px 0;
   background: var(--site-bg);
   font-family: "Outfit", sans-serif;
@@ -773,6 +774,7 @@
 
 .why-section {
   width: 100%;
+  margin-top: -75px;
   padding: 110px 0;
   background: var(--site-bg);
   font-family: "Outfit", sans-serif;
@@ -1077,6 +1079,7 @@
 
 .problems-section {
   width: 100%;
+  margin-top: -70px;
   padding: 110px 0;
   background: var(--site-bg);
   font-family: "Outfit", sans-serif;
@@ -1263,6 +1266,7 @@
 
 .care-section {
   width: 100%;
+  margin-top: -100px;
   padding: 110px 0;
   background: var(--site-bg);
   font-family: "Outfit", sans-serif;
@@ -1590,7 +1594,7 @@
 .lifecycle-section {
   width: 100%;
   padding: 120px 0;
-
+margin-top: -80px;
   background: var(--site-bg);
 
   font-family: "Outfit", sans-serif;

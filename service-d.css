@@ -198,7 +198,7 @@
 
 .setup-foundation-container {
   width: 100%;
-  max-width: 1380px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -445,6 +445,7 @@
 
 .setup-space-section {
   width: 100%;
+  margin-top: -90px;
   padding: 105px 60px 115px;
   background: var(--site-bg);
   font-family: "Outfit", sans-serif;
@@ -453,7 +454,7 @@
 
 .setup-space-container {
   width: 100%;
-  max-width: 1380px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -647,8 +648,8 @@
   color: var(--text);
 
   font-family: "Outfit", sans-serif;
-  font-size: clamp(32px, 3.2vw, 45px);
-  font-weight: 800;
+  font-size: 3.5rem;
+  font-weight: 400;
   line-height: 1.08;
   letter-spacing: -1.2px;
 }
@@ -688,7 +689,7 @@
 .setup-includes-section {
   width: 100%;
   padding: 105px 60px 115px;
-
+  margin-top: -90px;
   background: var(--site-bg);
 
   font-family: "Outfit", sans-serif;
@@ -968,6 +969,7 @@
 .setup-journey-section {
   width: 100%;
   padding: 105px 60px 115px;
+  margin-top: -90px;
   background: var(--site-bg);
   font-family: "Outfit", sans-serif;
   overflow: hidden;

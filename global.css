@@ -7,7 +7,10 @@
   --primary: #00a8c6;
   --secondary: #00d4b4;
 
-  --site-bg: #f4fafc;
+  /* --site-bg: #f4fafc;  */
+  /* --site-bg: #E6F7FA;  */
+  --site-bg : #F0FBFC;
+
 
   --surface: #ffffff;
   --surface-hover: #eaf8fa;
@@ -88,7 +91,7 @@ button {
 
   z-index: 1000;
 
-  background: var(--site-bg);
+  background: white;
 
   border-bottom: 1px solid var(--border);
 
@@ -513,7 +516,7 @@ body.dark-mode .nav-links a.active {
 .site-footer {
   margin-top: 80px;
 
-  background: var(--site-bg);
+  background: white;
 
   color: var(--footer-text);
 

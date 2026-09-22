@@ -530,6 +530,7 @@
 .pricing-plans-section {
   width: 100%;
   padding: 100px 60px 110px;
+  margin-top: -90px;
   background: var(--site-bg);
   font-family: "Outfit", sans-serif;
   overflow: hidden;
@@ -912,7 +913,7 @@
 .pricing-included-section {
   width: 100%;
   padding: 105px 60px 115px;
-
+  margin-top: -90px;
   background: var(--site-bg);
 
   font-family: "Outfit", sans-serif;
@@ -1282,7 +1283,7 @@ body.rtl .pricing-included-dot {
 .pricing-faq-section {
   width: 100%;
   padding: 105px 60px 110px;
-
+  margin-top: -90px;
   background: var(--site-bg);
 
   font-family: "Outfit", sans-serif;
