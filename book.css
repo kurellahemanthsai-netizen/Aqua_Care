@@ -1380,3 +1380,14 @@ body.dark-mode .form-card {
         animation: none !important;
     }
 }
+body.dark-mode .input-wrapper i[data-lucide="calendar-days"],
+body.dark-mode .input-wrapper svg[data-lucide="calendar-days"] {
+  color: #ffffff;
+  stroke: #ffffff;
+}
+
+body.dark-mode #date::-webkit-calendar-picker-indicator {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+  cursor: pointer;
+}
