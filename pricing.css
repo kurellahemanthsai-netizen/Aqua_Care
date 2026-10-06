@@ -531,7 +531,7 @@
   width: 100%;
   padding: 100px 60px 110px;
   margin-top: -90px;
-  background: var(--site-bg);
+  background: var(--surface);
   font-family: "Outfit", sans-serif;
   overflow: hidden;
 }
@@ -1284,7 +1284,7 @@ body.rtl .pricing-included-dot {
   width: 100%;
   padding: 105px 60px 110px;
   margin-top: -90px;
-  background: var(--site-bg);
+  background: var(--surface);
 
   font-family: "Outfit", sans-serif;
   overflow: hidden;

@@ -624,7 +624,7 @@
   width: 100%;
   padding: 105px 60px 110px;
   margin-top: -100px;
-  background: var(--site-bg);
+  background: var(--surface);
   font-family: "Outfit", sans-serif;
   overflow: hidden;
 }
@@ -1126,7 +1126,7 @@ body.rtl .maintenance-footer-content {
   width: 100%;
   padding: 105px 60px 110px;
   margin-top: -75px;
-  background: var(--site-bg);
+  background: var(--surface);
   font-family: "Outfit", sans-serif;
   overflow: hidden;
 }

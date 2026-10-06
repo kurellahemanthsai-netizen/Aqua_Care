@@ -217,7 +217,7 @@
   width: 100%;
   padding: 100px 60px 110px;
   margin-top: -90px;
-  background: var(--site-bg);
+  background: var(--surface);
 
   font-family: "Outfit", sans-serif;
   overflow: hidden;
@@ -442,7 +442,7 @@
 
   padding: 20px;
 
-  background: var(--surface);
+  background: var(--site-bg);
 
   border: 1px solid rgba(0, 168, 198, 0.16);
   border-radius: 18px;
@@ -535,7 +535,7 @@
 margin-top: -90px;
   padding: 105px 60px 115px;
 
-  background: var(--site-bg);
+  background: var(--surface);
 
   font-family: "Outfit", sans-serif;
 
@@ -769,6 +769,15 @@ margin-top: -90px;
   line-height: 1.5;
 
   text-align: center;
+}
+/* =========================================================
+   DATE INPUT — DARK MODE CALENDAR ICON
+   ========================================================= */
+
+body.dark-mode #bookingDate::-webkit-calendar-picker-indicator {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+  cursor: pointer;
 }
 
 /* =========================================================
@@ -2496,9 +2505,9 @@ iframe {
   }
 
   .contact-areas-location h3 {
-    font-size: 55px;
+    font-size: 45px;
 
-    letter-spacing: -2px;
+    letter-spacing: -1px;
   }
 
   .contact-areas-number {
@@ -3437,3 +3446,4 @@ iframe {
     font-size: 11px;
   }
 }
+

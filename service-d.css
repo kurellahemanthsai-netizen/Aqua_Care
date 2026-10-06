@@ -447,7 +447,7 @@
   width: 100%;
   margin-top: -90px;
   padding: 105px 60px 115px;
-  background: var(--site-bg);
+  background: var(--surface);
   font-family: "Outfit", sans-serif;
   overflow: hidden;
 }
@@ -970,7 +970,7 @@
   width: 100%;
   padding: 105px 60px 115px;
   margin-top: -90px;
-  background: var(--site-bg);
+  background: var(--surface);
   font-family: "Outfit", sans-serif;
   overflow: hidden;
 }

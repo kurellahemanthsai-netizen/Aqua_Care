@@ -436,7 +436,7 @@
 .about-story-value {
   display: flex;
 
-  align-items: center;
+  align-items:first baseline;
 
   gap: 16px;
 
@@ -457,7 +457,7 @@
 .about-story-value > div {
   display: flex;
 
-  align-items: center;
+  /* align-items: center; */
 
   gap: 10px;
 }
@@ -473,7 +473,7 @@
 
 .about-story-value strong {
   color: var(--text);
-
+  
   font-size: 12.5px;
   font-weight: 600;
 }
@@ -722,7 +722,7 @@
   width: 100%;
   padding: 105px 60px 115px;
   margin-top: -90px;
-  background: var(--site-bg);
+  background: var(--surface);
   color: var(--text);
   font-family: "Outfit", sans-serif;
   overflow: hidden;
@@ -1119,7 +1119,7 @@
   width: 100%;
   padding: 105px 60px 110px;
   margin-top: -90px;
-  background: var(--site-bg);
+  background: var(--surface);
   color: var(--text);
   font-family: "Outfit", sans-serif;
   overflow: hidden;
