@@ -5,7 +5,7 @@
 .pricing-hero-section {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 92vh;
   margin-top: 78px;
   /* min-height: 560px; */
   overflow: hidden;
@@ -126,7 +126,7 @@
 
   color: rgba(255, 255, 255, 0.76);
 
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -158,7 +158,7 @@
   border-radius: 7px;
 
   font-family: "Outfit", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1;
 
@@ -274,7 +274,7 @@
   margin: 18px auto 0;
 
   color: var(--muted);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -384,8 +384,8 @@
   margin: 9px 0 14px;
 
   color: var(--muted);
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 450;
   line-height: 1.65;
 }
 
@@ -436,7 +436,7 @@
   margin-bottom: 6px;
 
   color: var(--secondary);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 1.5px;
 }
@@ -457,7 +457,7 @@
   margin-top: 6px;
 
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 400;
   line-height: 1.45;
 }
@@ -591,7 +591,7 @@
   margin: 16px auto 0;
 
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -780,7 +780,7 @@
 .pricing-plan-price span {
   color: var(--muted);
 
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -798,7 +798,7 @@
 
   color: var(--muted);
 
-  font-size: 11.5px;
+  font-size: 12.5px;
   font-weight: 400;
 
   line-height: 1.6;
@@ -830,7 +830,7 @@
 
   color: var(--text);
 
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
 
   line-height: 1.35;
@@ -872,7 +872,7 @@
   background: transparent;
 
   border: 1px solid var(--primary);
-  border-radius: 30px;
+  border-radius: 8px;
 
   font-family: "Outfit", sans-serif;
   font-size: 12px;
@@ -981,7 +981,7 @@
 
   color: var(--muted);
 
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
 
   line-height: 1.7;
@@ -1222,7 +1222,7 @@
 
   color: var(--muted);
 
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 400;
 
   line-height: 1.55;
@@ -1350,7 +1350,7 @@ body.rtl .pricing-included-dot {
 
   color: var(--muted);
 
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.7;
 }
 
@@ -1478,7 +1478,7 @@ body.rtl .pricing-included-dot {
 
   color: var(--muted);
 
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
 
   line-height: 1.7;
@@ -1517,7 +1517,7 @@ body.rtl .pricing-included-dot {
 .pricing-faq-bottom > span {
   color: var(--muted);
 
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 600;
 
   letter-spacing: 1.5px;
@@ -1692,7 +1692,7 @@ body.rtl .pricing-included-dot {
 
   color: var(--muted);
 
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
 
   line-height: 1.7;
